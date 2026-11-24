@@ -157,6 +157,42 @@ def sync_day(api, day: date) -> dict:
     return record
 
 
+def _trim(obj: Any, limit: int = 15000) -> Any:
+    """Keep raw Garmin payloads but cap their size so data/ stays readable."""
+    if obj is None:
+        return None
+    raw = json.dumps(obj, ensure_ascii=False)
+    if len(raw) <= limit:
+        return obj
+    if isinstance(obj, list):
+        return obj[-10:]
+    return {"_truncated": True, "_head": raw[:limit]}
+
+
+def sync_performance(api, day: date) -> dict:
+    """Performance Stats screen: LT, race predictor, FTP, endurance, tolerance, economy, CSS."""
+    ds = day.isoformat()
+    start4w = (day - timedelta(days=28)).isoformat()
+    errors: dict[str, str] = {}
+    calls = {
+        "lactateThreshold": lambda: api.get_lactate_threshold(latest=True),
+        "racePredictions": lambda: api.get_race_predictions(),
+        "maxMetrics": lambda: api.get_max_metrics(ds),
+        "cyclingFtp": lambda: api.get_cycling_ftp(),
+        "enduranceScore": lambda: api.get_endurance_score(start4w, ds),
+        "runningTolerance": lambda: api.get_running_tolerance(start4w, ds),
+        "runningEconomy": lambda: api.get_running_economy(ds),
+        "criticalSwimSpeed": lambda: api.get_critical_swim_speed(ds),
+        "hillScore": lambda: api.get_hill_score(start4w, ds),
+    }
+    out: dict[str, Any] = {"date": ds, "syncedAt": datetime.now(TZ).isoformat(timespec="seconds")}
+    for key, fn in calls.items():
+        out[key] = _trim(_safe(key, fn, errors))
+    if errors:
+        out["errors"] = errors
+    return out
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("date", nargs="?", help="YYYY-MM-DD, default today (Asia/Jerusalem)")
@@ -173,6 +209,13 @@ def main() -> int:
             (OUT_DIR / f"{d.isoformat()}.json").write_text(
                 json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
             print(f"{d}: {len(rec['activities'])} activities, errors={list(rec.get('errors', {}))}")
+        perf = sync_performance(api, end)
+        perf_dir = Path("data/performance")
+        perf_dir.mkdir(parents=True, exist_ok=True)
+        text = json.dumps(perf, ensure_ascii=False, indent=2) + "\n"
+        (perf_dir / f"{end.isoformat()}.json").write_text(text)
+        (perf_dir / "latest.json").write_text(text)
+        print(f"performance: errors={list(perf.get('errors', {}))}")
     finally:
         save_tokens(api)
     return 0
