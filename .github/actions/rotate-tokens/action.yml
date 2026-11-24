@@ -1,0 +1,27 @@
+name: Rotate Garmin tokens
+description: Store refreshed Garmin OAuth tokens back into the GARMIN_TOKENS secret
+inputs:
+  gh_pat:
+    description: "Fine-grained PAT with Secrets read/write on this repo"
+    required: false
+  current:
+    description: Current GARMIN_TOKENS value
+    required: false
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh_pat }}
+        CURRENT: ${{ inputs.current }}
+      run: |
+        out=.garmin_tokens_out.json
+        if [ ! -s "$out" ]; then echo "no token dump"; exit 0; fi
+        if [ "$(cat "$out")" = "$CURRENT" ]; then echo "tokens unchanged"; rm -f "$out"; exit 0; fi
+        if [ -z "$GH_TOKEN" ]; then
+          echo "::warning::Garmin tokens were refreshed but GH_PAT is not set, secret not updated"
+          rm -f "$out"; exit 0
+        fi
+        gh secret set GARMIN_TOKENS -R "$GITHUB_REPOSITORY" < "$out"
+        rm -f "$out"
+        echo "GARMIN_TOKENS rotated"

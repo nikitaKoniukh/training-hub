@@ -1,0 +1,24 @@
+name: Validate workout spec
+
+on:
+  pull_request:
+    paths: ["workouts/*.json", "hub/**", "tests/**"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - name: Unit tests
+        run: python -m pytest -q tests
+      - name: Validate changed specs
+        run: |
+          files=$(git diff --name-only --diff-filter=AM origin/${{ github.base_ref }}...HEAD -- 'workouts/*.json')
+          [ -z "$files" ] && { echo "no specs changed"; exit 0; }
+          python -m hub.workout_builder $files
