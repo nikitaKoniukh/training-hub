@@ -44,12 +44,27 @@ jobs:
           fi
           echo "files=$(echo $files | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
           echo "Files: $files"
+          deleted=""
+          if [ "${{ github.event_name }}" = "push" ]; then
+            deleted=$(git diff --name-only --diff-filter=D "${{ github.event.before }}" "${{ github.sha }}" -- 'workouts/*.json' 2>/dev/null || true)
+          fi
+          echo "deleted=$(echo $deleted | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+          echo "Deleted: $deleted"
 
       - name: Upload and schedule
         if: steps.files.outputs.files != ''
         env:
           GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
         run: python -m hub.push_workout ${{ steps.files.outputs.files }}
+
+      - name: Cancel workouts whose files were deleted
+        if: steps.files.outputs.deleted != ''
+        env:
+          GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
+        run: |
+          for f in ${{ steps.files.outputs.deleted }}; do
+            python -m hub.push_workout cancel "$(basename "$f" .json)"
+          done
 
       - name: Rotate Garmin tokens
         if: always()
@@ -59,7 +74,7 @@ jobs:
           current: ${{ secrets.GARMIN_TOKENS }}
 
       - name: Commit push log
-        if: always() && steps.files.outputs.files != ''
+        if: always() && (steps.files.outputs.files != '' || steps.files.outputs.deleted != '')
         run: |
           git config user.name  "training-hub-bot"
           git config user.email "training-hub-bot@users.noreply.github.com"

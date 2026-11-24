@@ -146,6 +146,17 @@ def workout_text(day: str) -> str:
     return f"{day}: {spec['name']}\n{describe(spec)}"
 
 
+def week_text() -> str:
+    days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
+    lines = ["План на 7 дней (в календаре Garmin):"]
+    for i in range(7):
+        d = now().date() + timedelta(days=i)
+        p = Path("workouts") / f"{d.isoformat()}.json"
+        name = json.loads(p.read_text())["name"] if p.exists() else "—  (отдых / силовая / без файла)"
+        lines.append(f"{days[d.weekday()]} {d:%d.%m}: {name}")
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------- send
 
 def cmd_send() -> int:
@@ -176,7 +187,7 @@ def cmd_send() -> int:
 
 HELP = ("Пиши сюда как тренеру: самочувствие, боль, «завтра только 40 минут» — всё попадёт в заметки,\n"
         "тренер учтёт в ближайший запуск.\n\n"
-        "/today — тренировка на сегодня\n/tomorrow — на завтра\n/report — последний отчёт\n/help — эта справка")
+        "/today — тренировка на сегодня\n/tomorrow — на завтра\n/week — план на 7 дней\n/report — последний отчёт\n/help — эта справка")
 
 
 def handle_message(st: dict, m: dict) -> None:
@@ -198,6 +209,8 @@ def handle_message(st: dict, m: dict) -> None:
         say(st, workout_text(now().date().isoformat()))
     elif text == "/tomorrow":
         say(st, workout_text((now().date() + timedelta(days=1)).isoformat()))
+    elif text == "/week":
+        say(st, week_text())
     elif text == "/report":
         reps = sorted(Path("reports").glob("*.md"))
         say(st, reps[-1].read_text() if reps else "Отчётов пока нет.")
