@@ -167,6 +167,8 @@ class _Builder:
             out |= {"endCondition": END_TIME, "endConditionValue": float(secs)}
             self.est += secs * mult
         elif "distance_m" in s:
+            if self.sport in ("running", "cycling"):
+                raise SpecError("бег и вело — шаги по времени (time), не distance_m")
             d = s["distance_m"]
             if not (isinstance(d, (int, float)) and 0 < d <= 300000):
                 raise SpecError(f"bad distance_m {d}")
@@ -239,6 +241,8 @@ def describe(spec: dict) -> str:
         if "time" in s:
             end = s["time"]
         elif "distance_m" in s:
+            if self.sport in ("running", "cycling"):
+                raise SpecError("бег и вело — шаги по времени (time), не distance_m")
             d = s["distance_m"]
             end = f"{d / 1000:g} км" if spec.get("sport") != "swimming" else f"{d} м"
         else:
