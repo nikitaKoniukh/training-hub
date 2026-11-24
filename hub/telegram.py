@@ -15,6 +15,8 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -41,8 +43,17 @@ def api(method: str, **params) -> dict:
         {k: (json.dumps(v, ensure_ascii=False) if isinstance(v, (dict, list)) else v)
          for k, v in params.items() if v is not None}).encode()
     req = urllib.request.Request(f"https://api.telegram.org/bot{_token()}/{method}", data=data)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        res = json.loads(r.read())
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                res = json.loads(r.read())
+            break
+        except (urllib.error.URLError, ConnectionError, TimeoutError) as exc:
+            if isinstance(exc, urllib.error.HTTPError) and exc.code < 500 and exc.code != 429:
+                raise
+            if attempt == 3:
+                raise
+            time.sleep(2 * (attempt + 1))
     if not res.get("ok"):
         raise RuntimeError(f"{method}: {res}")
     return res["result"]
