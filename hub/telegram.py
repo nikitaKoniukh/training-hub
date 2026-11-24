@@ -245,7 +245,7 @@ if __name__ == "__main__":
     try:
         me = api("getMe")
         hook = api("getWebhookInfo")
-        write_status(cmd=cmd, bot=me.get("username"), webhook=hook.get("url") or None,
+        write_status(cmd=cmd, ok=True, error=None, bot=me.get("username"), webhook=hook.get("url") or None,
                      pending=hook.get("pending_update_count"), chat_id=load_state().get("chat_id"))
     except Exception as exc:
         write_status(cmd=cmd, ok=False, error=f"{type(exc).__name__}: {exc}"[:300])
