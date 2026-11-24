@@ -2,11 +2,11 @@
   "cmd": "send",
   "bot": "nikita_coach_hub_bot",
   "webhook": null,
-  "pending": 0,
+  "pending": 2,
   "chat_id": 766393315,
-  "at": "2026-11-24T14:16:19+02:00",
+  "at": "2026-11-24T14:21:41+02:00",
   "ok": true,
-  "lastPollUpdates": 0,
-  "offset": 415091724,
-  "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+  "lastPollUpdates": 2,
+  "offset": 415091726,
+  "error": null
 }
