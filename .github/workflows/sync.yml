@@ -4,6 +4,10 @@ on:
   schedule:
     # 16:20 UTC = 18:20 Israel in winter (19:20 in summer). Coach runs at 19:00 local.
     - cron: "20 16 * * *"
+  push:
+    # The coach (no Actions API access) requests a fresh sync by committing this file
+    branches: [main]
+    paths: ["requests/sync"]
   workflow_dispatch:
     inputs:
       date:

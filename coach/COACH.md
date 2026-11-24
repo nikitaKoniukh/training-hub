@@ -21,13 +21,19 @@
 
 ## Порядок работы
 
+GitHub: GraphQL и Actions API недоступны. `gh pr ...`, `gh workflow ...`, `gh run ...` не работают —
+только REST через `gh api repos/nikitaKoniukh/training-hub/...` и обычный git.
+
 1. `git pull`. Сегодня/завтра считай по Asia/Jerusalem.
-2. Если `data/daily/<сегодня>.json` отсутствует или `syncedAt` старше 3 ч:
-   `gh workflow run sync.yml`, затем `gh run watch` по последнему запуску, затем `git pull`.
-   Если синк упал — отчёт всё равно пишешь, отметив, что данных нет, а тренировку берёшь по плану без адаптации.
+2. Если `data/daily/<сегодня>.json` отсутствует или `syncedAt` старше 3 ч — запроси синк:
+   `date -Iseconds > requests/sync && git add requests/sync && git commit -m "coach: request sync" && git push`
+   (push этого файла запускает sync.yml). Затем раз в 30 с делай `git pull` и жди, пока `syncedAt`
+   в файле обновится, максимум 8 минут. Если не дождался — отчёт всё равно пишешь, отметив, что данных нет,
+   а тренировку берёшь по плану без адаптации.
 3. Прочитай: `plan/current.md`, `data/daily/` за 14 дней, последние 7 файлов `reports/`,
-   `logs/pushed.jsonl`, а также комментарии в последних закрытых/смёрдженных PR (`gh pr list --state all -L 5`,
-   `gh pr view N --comments`) — это обратная связь Никиты, учитывай её.
+   `logs/pushed.jsonl`, а также обратную связь Никиты в последних PR:
+   `gh api "repos/nikitaKoniukh/training-hub/pulls?state=all&per_page=5"` → для каждого номера
+   `gh api repos/nikitaKoniukh/training-hub/issues/N/comments` и `.../pulls/N/comments`. Учитывай её.
 4. Анализ:
    - **Выполнение**: что стояло в плане на сегодня и что сделано (активности, темп/пульс/мощность по отрезкам из `laps`).
    - **Восстановление**: HRV (`hrv.status`, lastNightAvg против weeklyAvg/baseline), сон (score, длительность),
@@ -53,10 +59,12 @@
    Пульсовые цели для лёгкого бега, темп — для интервалов и МТ, мощность — для вело.
    Разминка/заминка — по времени или `lap`. Название ≤ 30 символов, латиницей или по-русски.
    Силовая и отдых — без файла тренировки.
-8. Ветка `coach/<завтра>`, коммит отчёта и тренировки, PR в `main`:
+8. Ветка `coach/<завтра>`, коммит отчёта и тренировки, `git push -u origin coach/<завтра>`, затем PR в `main`:
+   `gh api repos/nikitaKoniukh/training-hub/pulls -f title='...' -f head='coach/<завтра>' -f base=main -f body="$(cat body.md)"`
+   (если PR на эту ветку уже есть — `gh api "repos/nikitaKoniukh/training-hub/pulls?head=nikitaKoniukh:coach/<завтра>"`,
+   тогда просто запушь ветку и обнови тело через `-X PATCH .../pulls/N -f body=...`).
    - заголовок: `Завтра <дд.мм>, <день>: <название>`
    - тело: содержимое отчёта + блок «Структура» в читаемом виде.
-   - если PR на эту дату уже открыт — обнови ту же ветку.
    - Если файла тренировки нет (отдых/силовая) — закоммить отчёт прямо в `main`, PR не нужен.
 9. Сам PR **не мёрджь**. Мердж = подтверждение Никиты, после него workflow отправит тренировку в Garmin.
 10. Последнее сообщение запуска — 2–3 строки: оценка дня, тренировка на завтра, ссылка на PR.
