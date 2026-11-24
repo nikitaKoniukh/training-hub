@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-25",
+  "sport": "running",
+  "name": "E 9 км",
+  "description": "Лёгкий бег, пульс до 145. Вечером силовая своим весом 30 мин.",
+  "steps": [
+    {"type": "warmup", "distance_m": 1000, "target": {"hr": [115, 140]}},
+    {"type": "interval", "distance_m": 7000, "target": {"hr": [130, 145]}, "note": "Ровно, разговорный темп"},
+    {"type": "cooldown", "distance_m": 1000, "target": {"hr": [115, 140]}}
+  ]
+}
