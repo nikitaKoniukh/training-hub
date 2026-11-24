@@ -38,6 +38,13 @@ jobs:
           GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
         run: python -m hub.telegram poll
 
+      - name: Render charts requested by outbox
+        run: |
+          if grep -lq '"render": *"weekly"' outbox/*.json 2>/dev/null; then
+            pip install matplotlib
+            python -m hub.weekly --chart
+          fi
+
       - name: Send outbox
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

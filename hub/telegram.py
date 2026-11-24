@@ -6,6 +6,7 @@
 
 Outbox message (written by the coach and pushed):
   {"text": "plain text", "buttons_for": "2026-11-25"}   # buttons_for optional -> ОК / Легче / Отменить
+  {"text": "...", "render": "weekly", "photo": "charts/weekly.png", "caption": "..."}  # weekly chart
 
 The bot answers only the chat stored in bot/state.json. The first chat that sends
 /start claims the bot (do it right after creating it).
@@ -82,6 +83,29 @@ def buttons(day: str) -> dict:
     ]]}
 
 
+def send_photo(st: dict, path: Path, caption: str = "") -> None:
+    """multipart/form-data upload via stdlib."""
+    import uuid
+    boundary = uuid.uuid4().hex
+    parts = []
+    for k, v in (("chat_id", str(st["chat_id"])), ("caption", caption[:1000])):
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+    parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="{path.name}"\r\n'
+                 f"Content-Type: image/png\r\n\r\n".encode() + path.read_bytes() + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode())
+    req = urllib.request.Request(f"https://api.telegram.org/bot{_token()}/sendPhoto", data=b"".join(parts),
+                                 headers={"Content-Type": f"multipart/form-data; boundary={boundary}"})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                if json.loads(r.read()).get("ok"):
+                    return
+        except Exception as exc:
+            if attempt == 2:
+                raise RuntimeError(f"sendPhoto: {exc}") from exc
+            time.sleep(3)
+
+
 def say(st: dict, text: str, markup: dict | None = None) -> None:
     if not st.get("chat_id"):
         print("no chat_id yet — send /start to the bot")
@@ -137,6 +161,11 @@ def cmd_send() -> int:
     for p in files:
         msg = json.loads(p.read_text())
         day = msg.get("buttons_for")
+        photo = Path(msg["photo"]) if msg.get("photo") else None
+        if photo and photo.exists():
+            send_photo(st, photo, msg.get("caption", ""))
+        elif photo:
+            print(f"warn: photo {photo} missing, sending text only")
         say(st, msg["text"], buttons(day) if day else None)
         p.rename(SENT / p.name)
         print(f"sent {p.name}")

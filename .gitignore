@@ -5,3 +5,4 @@ __pycache__/
 .garmin_tokens_out.json
 garmin_tokens.json
 .garminconnect/
+charts/
