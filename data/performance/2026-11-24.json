@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "syncedAt": "2026-11-24T14:24:22+02:00",
+  "syncedAt": "2026-11-24T20:50:16+02:00",
   "lactateThreshold": {
     "speed_and_heart_rate": {
       "userProfilePK": 95957400,
@@ -64,7 +64,7 @@
         "previousAltitude": 0,
         "acclimationPercentage": 0,
         "previousAcclimationPercentage": 0,
-        "altitudeAcclimationLocalTimestamp": "2026-11-24T07:40:58.0"
+        "altitudeAcclimationLocalTimestamp": "2026-11-24T18:12:25.0"
       }
     }
   ],
@@ -190,8 +190,8 @@
         ]
       },
       "2026-11-18": {
-        "groupAverage": 8180,
-        "groupMax": 8219,
+        "groupAverage": 8181,
+        "groupMax": 8221,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
@@ -201,12 +201,12 @@
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 52.799995
+            "contribution": 52.78714
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 41.43714
+            "contribution": 41.45
           },
           {
             "activityTypeId": null,
@@ -220,7 +220,7 @@
       "userProfilePK": 95957400,
       "deviceId": 3508626943,
       "calendarDate": "2026-11-24",
-      "overallScore": 8219,
+      "overallScore": 8221,
       "classification": 6,
       "feedbackPhrase": 72,
       "primaryTrainingDevice": true,
@@ -236,12 +236,12 @@
         {
           "activityTypeId": null,
           "group": 0,
-          "contribution": 55.56
+          "contribution": 55.47
         },
         {
           "activityTypeId": null,
           "group": 1,
-          "contribution": 39.36
+          "contribution": 39.45
         },
         {
           "activityTypeId": null,

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "syncedAt": "2026-11-24T14:24:21+02:00",
+  "syncedAt": "2026-11-24T20:50:15+02:00",
   "sleep": {
     "sleepSeconds": 26700,
     "deep": 4080,
@@ -29,12 +29,12 @@
     }
   },
   "readiness": {
-    "score": 60,
+    "score": 68,
     "level": "MODERATE",
     "feedbackShort": "LISTEN_TO_YOUR_BODY",
     "sleepScore": 89,
-    "recoveryTime": 1391,
-    "acuteLoad": 889,
+    "recoveryTime": 761,
+    "acuteLoad": 899,
     "hrvWeeklyAverage": 37,
     "hrvFactorPercent": 63,
     "sleepHistoryFactorPercent": 84,
@@ -42,31 +42,55 @@
     "acwrFactorPercent": 80
   },
   "stats": {
-    "totalSteps": 13239,
+    "totalSteps": 17137,
     "restingHeartRate": 43,
-    "averageStressLevel": 23,
-    "maxStressLevel": 90,
+    "averageStressLevel": 24,
+    "maxStressLevel": 99,
     "bodyBatteryHighestValue": 96,
-    "bodyBatteryLowestValue": 49,
-    "bodyBatteryMostRecentValue": 49,
-    "moderateIntensityMinutes": 5,
-    "vigorousIntensityMinutes": 74,
-    "activeKilocalories": 1012.0
+    "bodyBatteryLowestValue": 37,
+    "bodyBatteryMostRecentValue": 37,
+    "moderateIntensityMinutes": 11,
+    "vigorousIntensityMinutes": 82,
+    "activeKilocalories": 1250.0
   },
   "trainingStatus": {
     "vo2max": 59.1,
     "status": "MAINTAINING_4",
-    "acuteLoad": 889,
-    "chronicLoad": 712,
+    "acuteLoad": 899,
+    "chronicLoad": 714,
     "acwr": 1.2,
     "loadBalance": {
-      "monthlyLoadAerobicLow": 1436.5293,
+      "monthlyLoadAerobicLow": 1443.3909,
       "monthlyLoadAerobicHigh": 991.1978,
       "monthlyLoadAnaerobic": 233.06822,
       "trainingBalanceFeedbackPhrase": "LOW_AEROBIC_OVERAGE"
     }
   },
   "activities": [
+    {
+      "activityId": 25185459238,
+      "activityName": "Cycling",
+      "startTimeLocal": "2026-11-24 17:57:55",
+      "duration": 821.2769775390625,
+      "movingDuration": 805.0,
+      "distance": 4476.02001953125,
+      "elevationGain": 31.0,
+      "averageHR": 99.0,
+      "maxHR": 132.0,
+      "averageSpeed": 5.449999809265137,
+      "aerobicTrainingEffect": 0.5,
+      "anaerobicTrainingEffect": 0.0,
+      "trainingEffectLabel": "RECOVERY",
+      "activityTrainingLoad": 7.8781280517578125,
+      "calories": 100.0,
+      "lapCount": 1,
+      "hrTimeInZone_1": 186.38,
+      "hrTimeInZone_2": 245.003,
+      "hrTimeInZone_3": 26.0,
+      "hrTimeInZone_4": 0.0,
+      "hrTimeInZone_5": 0.0,
+      "type": "cycling"
+    },
     {
       "activityId": 25180092110,
       "activityName": "Cycling",
