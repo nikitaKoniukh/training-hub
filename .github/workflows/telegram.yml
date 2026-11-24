@@ -32,16 +32,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Send outbox
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: python -m hub.telegram send
-
       - name: Read messages and buttons
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
         run: python -m hub.telegram poll
+
+      - name: Send outbox
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python -m hub.telegram send
 
       - name: Rotate Garmin tokens
         if: always()
