@@ -207,6 +207,7 @@ def cmd_poll() -> int:
             print(f"error on update {u['update_id']}: {exc}")
         save_state(st)
     print(f"processed {len(updates)} updates")
+    write_status(ok=True, lastPollUpdates=len(updates), offset=st.get("offset"))
     return 0
 
 
@@ -215,11 +216,30 @@ def cmd_alert(text: str) -> int:
     return 0
 
 
+def write_status(**kw) -> None:
+    """bot/last_run.json — lets the coach (and Claude) see bot health without Actions logs."""
+    STATE.parent.mkdir(exist_ok=True)
+    path = STATE.parent / "last_run.json"
+    cur = json.loads(path.read_text()) if path.exists() else {}
+    cur.update(kw, at=now().isoformat(timespec="seconds"))
+    path.write_text(json.dumps(cur, ensure_ascii=False, indent=2) + "\n")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if not os.getenv("TELEGRAM_BOT_TOKEN", "").strip():
         print("TELEGRAM_BOT_TOKEN not set — bot disabled, skipping")
+        write_status(cmd=cmd, ok=False, error="TELEGRAM_BOT_TOKEN not set")
         sys.exit(0)
+    try:
+        me = api("getMe")
+        hook = api("getWebhookInfo")
+        write_status(cmd=cmd, bot=me.get("username"), webhook=hook.get("url") or None,
+                     pending=hook.get("pending_update_count"), chat_id=load_state().get("chat_id"))
+    except Exception as exc:
+        write_status(cmd=cmd, ok=False, error=f"{type(exc).__name__}: {exc}"[:300])
+        print(f"Telegram API error: {exc}")
+        sys.exit(1)
     if cmd == "send":
         sys.exit(cmd_send())
     if cmd == "poll":
