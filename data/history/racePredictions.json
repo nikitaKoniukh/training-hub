@@ -1,0 +1,852 @@
+[
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-01",
+  "time5K": 1150,
+  "time10K": 2443,
+  "timeHalfMarathon": 5427,
+  "timeMarathon": 12072
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-02",
+  "time5K": 1155,
+  "time10K": 2451,
+  "timeHalfMarathon": 5439,
+  "timeMarathon": 12112
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-03",
+  "time5K": 1160,
+  "time10K": 2459,
+  "timeHalfMarathon": 5450,
+  "timeMarathon": 12148
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-04",
+  "time5K": 1149,
+  "time10K": 2440,
+  "timeHalfMarathon": 5423,
+  "timeMarathon": 12045
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-05",
+  "time5K": 1153,
+  "time10K": 2448,
+  "timeHalfMarathon": 5433,
+  "timeMarathon": 12079
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-06",
+  "time5K": 1157,
+  "time10K": 2453,
+  "timeHalfMarathon": 5442,
+  "timeMarathon": 12107
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-07",
+  "time5K": 1137,
+  "time10K": 2412,
+  "timeHalfMarathon": 5390,
+  "timeMarathon": 11921
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-08",
+  "time5K": 1140,
+  "time10K": 2418,
+  "timeHalfMarathon": 5397,
+  "timeMarathon": 11946
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-09",
+  "time5K": 1145,
+  "time10K": 2429,
+  "timeHalfMarathon": 5411,
+  "timeMarathon": 11999
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-10",
+  "time5K": 1149,
+  "time10K": 2436,
+  "timeHalfMarathon": 5421,
+  "timeMarathon": 12039
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-11",
+  "time5K": 1137,
+  "time10K": 2410,
+  "timeHalfMarathon": 5392,
+  "timeMarathon": 11949
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-12",
+  "time5K": 1141,
+  "time10K": 2418,
+  "timeHalfMarathon": 5401,
+  "timeMarathon": 11979
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-13",
+  "time5K": 1144,
+  "time10K": 2425,
+  "timeHalfMarathon": 5409,
+  "timeMarathon": 12005
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-14",
+  "time5K": 1153,
+  "time10K": 2444,
+  "timeHalfMarathon": 5432,
+  "timeMarathon": 12077
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-15",
+  "time5K": 1156,
+  "time10K": 2449,
+  "timeHalfMarathon": 5441,
+  "timeMarathon": 12105
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-16",
+  "time5K": 1123,
+  "time10K": 2382,
+  "timeHalfMarathon": 5345,
+  "timeMarathon": 11836
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-17",
+  "time5K": 1123,
+  "time10K": 2383,
+  "timeHalfMarathon": 5348,
+  "timeMarathon": 11842
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-18",
+  "time5K": 1124,
+  "time10K": 2385,
+  "timeHalfMarathon": 5352,
+  "timeMarathon": 11846
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-19",
+  "time5K": 1127,
+  "time10K": 2390,
+  "timeHalfMarathon": 5360,
+  "timeMarathon": 11854
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-20",
+  "time5K": 1127,
+  "time10K": 2389,
+  "timeHalfMarathon": 5369,
+  "timeMarathon": 11878
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-21",
+  "time5K": 1127,
+  "time10K": 2390,
+  "timeHalfMarathon": 5377,
+  "timeMarathon": 11906
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-22",
+  "time5K": 1128,
+  "time10K": 2391,
+  "timeHalfMarathon": 5385,
+  "timeMarathon": 11945
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-23",
+  "time5K": 1128,
+  "time10K": 2393,
+  "timeHalfMarathon": 5393,
+  "timeMarathon": 11976
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-24",
+  "time5K": 1116,
+  "time10K": 2368,
+  "timeHalfMarathon": 5339,
+  "timeMarathon": 11844
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-25",
+  "time5K": 1116,
+  "time10K": 2367,
+  "timeHalfMarathon": 5337,
+  "timeMarathon": 11841
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-26",
+  "time5K": 1116,
+  "time10K": 2368,
+  "timeHalfMarathon": 5337,
+  "timeMarathon": 11843
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-27",
+  "time5K": 1118,
+  "time10K": 2370,
+  "timeHalfMarathon": 5345,
+  "timeMarathon": 11857
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-28",
+  "time5K": 1118,
+  "time10K": 2373,
+  "timeHalfMarathon": 5351,
+  "timeMarathon": 11869
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-29",
+  "time5K": 1118,
+  "time10K": 2371,
+  "timeHalfMarathon": 5348,
+  "timeMarathon": 11875
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-09-30",
+  "time5K": 1117,
+  "time10K": 2368,
+  "timeHalfMarathon": 5339,
+  "timeMarathon": 11855
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-01",
+  "time5K": 1116,
+  "time10K": 2366,
+  "timeHalfMarathon": 5336,
+  "timeMarathon": 11851
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-02",
+  "time5K": 1117,
+  "time10K": 2368,
+  "timeHalfMarathon": 5339,
+  "timeMarathon": 11857
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-03",
+  "time5K": 1113,
+  "time10K": 2362,
+  "timeHalfMarathon": 5297,
+  "timeMarathon": 11757
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-04",
+  "time5K": 1111,
+  "time10K": 2357,
+  "timeHalfMarathon": 5287,
+  "timeMarathon": 11741
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-05",
+  "time5K": 1104,
+  "time10K": 2341,
+  "timeHalfMarathon": 5252,
+  "timeMarathon": 11684
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-06",
+  "time5K": 1104,
+  "time10K": 2341,
+  "timeHalfMarathon": 5252,
+  "timeMarathon": 11685
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-07",
+  "time5K": 1104,
+  "time10K": 2340,
+  "timeHalfMarathon": 5251,
+  "timeMarathon": 11682
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-08",
+  "time5K": 1104,
+  "time10K": 2340,
+  "timeHalfMarathon": 5251,
+  "timeMarathon": 11683
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-09",
+  "time5K": 1104,
+  "time10K": 2340,
+  "timeHalfMarathon": 5251,
+  "timeMarathon": 11684
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-10",
+  "time5K": 1103,
+  "time10K": 2340,
+  "timeHalfMarathon": 5250,
+  "timeMarathon": 11673
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-11",
+  "time5K": 1106,
+  "time10K": 2346,
+  "timeHalfMarathon": 5250,
+  "timeMarathon": 11673
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-12",
+  "time5K": 1106,
+  "time10K": 2346,
+  "timeHalfMarathon": 5250,
+  "timeMarathon": 11673
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-13",
+  "time5K": 1106,
+  "time10K": 2346,
+  "timeHalfMarathon": 5249,
+  "timeMarathon": 11673
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-14",
+  "time5K": 1102,
+  "time10K": 2339,
+  "timeHalfMarathon": 5226,
+  "timeMarathon": 11590
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-15",
+  "time5K": 1099,
+  "time10K": 2332,
+  "timeHalfMarathon": 5215,
+  "timeMarathon": 11554
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-16",
+  "time5K": 1099,
+  "time10K": 2332,
+  "timeHalfMarathon": 5215,
+  "timeMarathon": 11553
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-17",
+  "time5K": 1099,
+  "time10K": 2331,
+  "timeHalfMarathon": 5214,
+  "timeMarathon": 11552
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-18",
+  "time5K": 1099,
+  "time10K": 2330,
+  "timeHalfMarathon": 5212,
+  "timeMarathon": 11550
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-19",
+  "time5K": 1090,
+  "time10K": 2315,
+  "timeHalfMarathon": 5177,
+  "timeMarathon": 11479
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-20",
+  "time5K": 1086,
+  "time10K": 2303,
+  "timeHalfMarathon": 5148,
+  "timeMarathon": 11415
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-21",
+  "time5K": 1085,
+  "time10K": 2302,
+  "timeHalfMarathon": 5146,
+  "timeMarathon": 11412
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-22",
+  "time5K": 1086,
+  "time10K": 2304,
+  "timeHalfMarathon": 5154,
+  "timeMarathon": 11432
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-23",
+  "time5K": 1086,
+  "time10K": 2305,
+  "timeHalfMarathon": 5155,
+  "timeMarathon": 11435
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-24",
+  "time5K": 1086,
+  "time10K": 2305,
+  "timeHalfMarathon": 5154,
+  "timeMarathon": 11433
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-25",
+  "time5K": 1080,
+  "time10K": 2291,
+  "timeHalfMarathon": 5122,
+  "timeMarathon": 11359
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-26",
+  "time5K": 1080,
+  "time10K": 2291,
+  "timeHalfMarathon": 5121,
+  "timeMarathon": 11357
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-27",
+  "time5K": 1080,
+  "time10K": 2292,
+  "timeHalfMarathon": 5123,
+  "timeMarathon": 11361
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-28",
+  "time5K": 1083,
+  "time10K": 2297,
+  "timeHalfMarathon": 5137,
+  "timeMarathon": 11389
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-29",
+  "time5K": 1084,
+  "time10K": 2300,
+  "timeHalfMarathon": 5143,
+  "timeMarathon": 11400
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-30",
+  "time5K": 1084,
+  "time10K": 2302,
+  "timeHalfMarathon": 5147,
+  "timeMarathon": 11408
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-10-31",
+  "time5K": 1086,
+  "time10K": 2305,
+  "timeHalfMarathon": 5153,
+  "timeMarathon": 11417
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-01",
+  "time5K": 1086,
+  "time10K": 2307,
+  "timeHalfMarathon": 5159,
+  "timeMarathon": 11436
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-02",
+  "time5K": 1087,
+  "time10K": 2308,
+  "timeHalfMarathon": 5162,
+  "timeMarathon": 11441
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-03",
+  "time5K": 1088,
+  "time10K": 2310,
+  "timeHalfMarathon": 5166,
+  "timeMarathon": 11449
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-04",
+  "time5K": 1089,
+  "time10K": 2312,
+  "timeHalfMarathon": 5170,
+  "timeMarathon": 11459
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-05",
+  "time5K": 1088,
+  "time10K": 2311,
+  "timeHalfMarathon": 5173,
+  "timeMarathon": 11289
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-06",
+  "time5K": 1088,
+  "time10K": 2311,
+  "timeHalfMarathon": 5175,
+  "timeMarathon": 11296
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-07",
+  "time5K": 1087,
+  "time10K": 2310,
+  "timeHalfMarathon": 5173,
+  "timeMarathon": 11292
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-08",
+  "time5K": 1087,
+  "time10K": 2309,
+  "timeHalfMarathon": 5170,
+  "timeMarathon": 11287
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-09",
+  "time5K": 1080,
+  "time10K": 2297,
+  "timeHalfMarathon": 5149,
+  "timeMarathon": 11244
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-10",
+  "time5K": 1081,
+  "time10K": 2297,
+  "timeHalfMarathon": 5148,
+  "timeMarathon": 11239
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-11",
+  "time5K": 1077,
+  "time10K": 2289,
+  "timeHalfMarathon": 5126,
+  "timeMarathon": 11185
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-12",
+  "time5K": 1077,
+  "time10K": 2289,
+  "timeHalfMarathon": 5125,
+  "timeMarathon": 11183
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-13",
+  "time5K": 1077,
+  "time10K": 2287,
+  "timeHalfMarathon": 5123,
+  "timeMarathon": 11180
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-14",
+  "time5K": 1078,
+  "time10K": 2286,
+  "timeHalfMarathon": 5122,
+  "timeMarathon": 11178
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-15",
+  "time5K": 1078,
+  "time10K": 2286,
+  "timeHalfMarathon": 5121,
+  "timeMarathon": 11176
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-16",
+  "time5K": 1080,
+  "time10K": 2290,
+  "timeHalfMarathon": 5130,
+  "timeMarathon": 11195
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-17",
+  "time5K": 1080,
+  "time10K": 2289,
+  "timeHalfMarathon": 5130,
+  "timeMarathon": 11194
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-18",
+  "time5K": 1078,
+  "time10K": 2282,
+  "timeHalfMarathon": 5110,
+  "timeMarathon": 11148
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-19",
+  "time5K": 1077,
+  "time10K": 2281,
+  "timeHalfMarathon": 5110,
+  "timeMarathon": 11147
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-20",
+  "time5K": 1076,
+  "time10K": 2274,
+  "timeHalfMarathon": 5090,
+  "timeMarathon": 11100
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-21",
+  "time5K": 1076,
+  "time10K": 2274,
+  "timeHalfMarathon": 5091,
+  "timeMarathon": 11101
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-22",
+  "time5K": 1076,
+  "time10K": 2274,
+  "timeHalfMarathon": 5092,
+  "timeMarathon": 11103
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-23",
+  "time5K": 1072,
+  "time10K": 2267,
+  "timeHalfMarathon": 5075,
+  "timeMarathon": 11066
+ },
+ {
+  "userId": 95957400,
+  "fromCalendarDate": "2026-09-01",
+  "toCalendarDate": "2026-11-24",
+  "calendarDate": "2026-11-24",
+  "time5K": 1072,
+  "time10K": 2264,
+  "timeHalfMarathon": 5062,
+  "timeMarathon": 11032
+ }
+]
