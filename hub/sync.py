@@ -188,9 +188,60 @@ def sync_performance(api, day: date) -> dict:
     out: dict[str, Any] = {"date": ds, "syncedAt": datetime.now(TZ).isoformat(timespec="seconds")}
     for key, fn in calls.items():
         out[key] = _trim(_safe(key, fn, errors))
+    out["summary"] = summarize_performance(out)
     if errors:
         out["errors"] = errors
     return out
+
+
+def _hms(sec: float | None) -> str | None:
+    if not sec:
+        return None
+    sec = int(round(sec))
+    return f"{sec // 3600}:{sec % 3600 // 60:02d}:{sec % 60:02d}"
+
+
+def summarize_performance(p: dict) -> dict:
+    """Human units, so the coach never has to guess Garmin's encodings."""
+    s: dict[str, Any] = {}
+    lt = ((p.get("lactateThreshold") or {}).get("speed_and_heart_rate") or {})
+    if lt.get("speed"):
+        mps = lt["speed"] * 10  # Garmin stores LT speed in 10 m/s units
+        s["ltPace"] = _pace(mps).replace("/km", "") if mps else None
+        s["ltPaceSec"] = round(1000 / mps, 1)
+        s["ltHr"] = lt.get("heartRate")
+        s["ltHrCycling"] = lt.get("heartRateCycling")
+        s["ltDate"] = (lt.get("calendarDate") or "")[:10]
+    rp = p.get("racePredictions") or {}
+    if isinstance(rp, list):
+        rp = rp[-1] if rp else {}
+    for k, name in (("time5K", "5k"), ("time10K", "10k"), ("timeHalfMarathon", "half"), ("timeMarathon", "marathon")):
+        if rp.get(k):
+            s[f"predict_{name}"] = _hms(rp[k])
+    mm = p.get("maxMetrics")
+    mm = mm[0] if isinstance(mm, list) and mm else (mm or {})
+    s["vo2max"] = ((mm.get("generic") or {}).get("vo2MaxPreciseValue"))
+    ftp = p.get("cyclingFtp")
+    ftp = ftp[-1] if isinstance(ftp, list) and ftp else (ftp or {})
+    s["ftpCycling"] = ftp.get("functionalThresholdPower")
+    rpw = (p.get("lactateThreshold") or {}).get("power") or {}
+    s["ftpRunningPower"] = rpw.get("functionalThresholdPower")
+    s["weightKg"] = rpw.get("weight")
+    css = (p.get("criticalSwimSpeed") or {}).get("criticalSwimSpeed")
+    if css:
+        sec100 = 100 / (css / 1000)  # css in mm/s
+        s["cssPer100m"] = f"{int(sec100 // 60)}:{int(sec100 % 60):02d}"
+        s["cssDate"] = ((p.get("criticalSwimSpeed") or {}).get("measurementTimestampLocal") or "")[:10]
+    tol = p.get("runningTolerance")
+    if isinstance(tol, list) and tol:
+        w = tol[-1]
+        s["runTolerance"] = {"week": w.get("startOfWeek"), "impactLoad": w.get("totalImpactLoad"),
+                             "tolerance": w.get("tolerance"),
+                             "ratio": round(w["totalImpactLoad"] / w["tolerance"], 2) if w.get("tolerance") else None}
+    es = p.get("enduranceScore") or {}
+    if isinstance(es, dict) and es.get("avg"):
+        s["enduranceScore4wAvg"] = es.get("avg")
+    return {k: v for k, v in s.items() if v is not None}
 
 
 def main() -> int:
