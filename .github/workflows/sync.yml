@@ -44,6 +44,12 @@ jobs:
           GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
         run: python -m hub.sync ${{ inputs.date }} --days ${{ inputs.days || '2' }}
 
+      - name: Pull 12-week history (weekly review)
+        continue-on-error: true
+        env:
+          GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
+        run: python -m hub.history
+
       - name: Rotate Garmin tokens
         if: always()
         uses: ./.github/actions/rotate-tokens

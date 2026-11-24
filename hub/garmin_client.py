@@ -17,7 +17,8 @@ TOKENS_OUT = Path(os.getenv("GARMIN_TOKENS_OUT", ".garmin_tokens_out.json"))
 
 
 def login() -> Garmin:
-    tokens = os.getenv("GARMIN_TOKENS", "").strip()
+    # Prefer tokens refreshed earlier in the same job (a refresh may invalidate the old ones)
+    tokens = TOKENS_OUT.read_text().strip() if TOKENS_OUT.exists() else os.getenv("GARMIN_TOKENS", "").strip()
     if not tokens:
         sys.exit("GARMIN_TOKENS is empty. Run scripts/bootstrap_login.py locally first.")
     try:
