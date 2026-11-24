@@ -1,0 +1,11 @@
+{
+  "cmd": "send",
+  "bot": "nikita_coach_hub_bot",
+  "webhook": null,
+  "pending": 0,
+  "chat_id": null,
+  "at": "2026-11-24T14:13:51+02:00",
+  "ok": true,
+  "lastPollUpdates": 0,
+  "offset": 0
+}
