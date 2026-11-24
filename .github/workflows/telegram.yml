@@ -3,7 +3,7 @@ name: Telegram bot
 on:
   push:
     branches: [main]
-    paths: ["outbox/*.json"]
+    paths: ["outbox/*.json", "requests/bot"]
   schedule:
     # UTC. Israel winter = UTC+2: every 15 min 05:00-05:45 and 18:00-21:45, otherwise every 2 h
     - cron: "*/15 3 * * *"
