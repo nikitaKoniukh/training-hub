@@ -217,6 +217,9 @@ def cmd_alert(text: str) -> int:
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
+    if not os.getenv("TELEGRAM_BOT_TOKEN", "").strip():
+        print("TELEGRAM_BOT_TOKEN not set — bot disabled, skipping")
+        sys.exit(0)
     if cmd == "send":
         sys.exit(cmd_send())
     if cmd == "poll":
