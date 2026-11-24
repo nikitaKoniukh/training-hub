@@ -60,3 +60,10 @@ jobs:
           git commit -m "hub: sync $(TZ=Asia/Jerusalem date +%F)"
           git pull --rebase --autostash
           git push
+
+      - name: Alert in Telegram on failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: >-
+          python -m hub.telegram alert "Синк Garmin упал (часто это токены: повтори bootstrap_login.py) — ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" || true

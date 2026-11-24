@@ -80,5 +80,40 @@ def main(paths: list[str]) -> int:
     return rc
 
 
+def cancel(day: str, api=None) -> str:
+    """Remove every workout pushed for `day` from the Garmin calendar."""
+    live = [e for e in _log_entries() if e["date"] == day and not e.get("cancelled")]
+    cancelled_ids = {e.get("workoutId") for e in _log_entries() if e.get("cancelled")}
+    live = [e for e in live if e.get("workoutId") not in cancelled_ids]
+    if not live:
+        return f"На {day} в календаре нет тренировки от тренера."
+    own = api is None
+    api = api or login()
+    removed = []
+    try:
+        for e in live:
+            try:
+                if e.get("scheduleId"):
+                    api.unschedule_workout(e["scheduleId"])
+                api.delete_workout(e["workoutId"])
+                removed.append(e)
+            except Exception as exc:
+                print(f"warn: cancel {e.get('workoutId')}: {exc}")
+        with LOG.open("a") as f:
+            for e in removed:
+                f.write(json.dumps({"date": day, "workoutId": e["workoutId"], "cancelled": True,
+                                    "at": datetime.now(TZ).isoformat(timespec="seconds")},
+                                   ensure_ascii=False) + "\n")
+    finally:
+        if own:
+            save_tokens(api)
+    if not removed:
+        return f"Не получилось удалить тренировку на {day} — удали её в Garmin Connect вручную."
+    return f"Отменил на {day}: " + ", ".join(e.get("name", str(e["workoutId"])) for e in removed)
+
+
 if __name__ == "__main__":
+    if len(sys.argv) == 3 and sys.argv[1] == "cancel":
+        print(cancel(sys.argv[2]))
+        sys.exit(0)
     sys.exit(main(sys.argv[1:]))

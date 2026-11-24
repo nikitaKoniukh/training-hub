@@ -216,6 +216,45 @@ def build(spec: dict) -> dict:
     return {k: v for k, v in workout.items() if v is not None}
 
 
+def describe(spec: dict) -> str:
+    """One readable line per step, for Telegram / reports."""
+    def tgt(t: dict | None) -> str:
+        if not t:
+            return ""
+        (k, v), = t.items()
+        return {
+            "hr": lambda: f" HR {v[0]}–{v[1]}",
+            "hr_zone": lambda: f" HR зона {v}",
+            "pace": lambda: f" @ {v[0]}–{v[1]}/км",
+            "power": lambda: f" {v[0]}–{v[1]} Вт",
+            "power_zone": lambda: f" мощность зона {v}",
+            "cadence": lambda: f" каденс {v[0]}–{v[1]}",
+            "speed_kmh": lambda: f" {v[0]}–{v[1]} км/ч",
+        }.get(k, lambda: "")()
+
+    names = {"warmup": "разминка", "cooldown": "заминка", "interval": "", "recovery": "отдых",
+             "rest": "пауза", "other": ""}
+
+    def one(s: dict) -> str:
+        if "time" in s:
+            end = s["time"]
+        elif "distance_m" in s:
+            d = s["distance_m"]
+            end = f"{d / 1000:g} км" if spec.get("sport") != "swimming" else f"{d} м"
+        else:
+            end = "до кнопки"
+        label = names.get(s.get("type"), "")
+        return f"{label + ' ' if label else ''}{end}{tgt(s.get('target'))}".strip()
+
+    lines = []
+    for s in spec["steps"]:
+        if "repeat" in s:
+            lines.append(f"{s['repeat']}× (" + " / ".join(one(c) for c in s["steps"]) + ")")
+        else:
+            lines.append(one(s))
+    return "\n".join(f"• {l}" for l in lines)
+
+
 def load_spec(path: Path) -> dict:
     spec = json.loads(path.read_text())
     if path.stem != spec.get("date"):
