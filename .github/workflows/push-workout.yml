@@ -3,7 +3,7 @@ name: Push workout to Garmin
 on:
   push:
     branches: [main]
-    paths: ["workouts/*.json"]
+    paths: ["workouts/*.json", "requests/garmin_delete"]
   workflow_dispatch:
     inputs:
       file:
@@ -51,6 +51,19 @@ jobs:
           echo "deleted=$(echo $deleted | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
           echo "Deleted: $deleted"
 
+      - name: Delete orphan workouts by id (requests/garmin_delete)
+        id: del
+        if: github.event_name == 'push'
+        env:
+          GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
+        run: |
+          git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- requests/garmin_delete 2>/dev/null | grep -q . || exit 0
+          ids=$(grep -oE '^[0-9]+' requests/garmin_delete | tr '\n' ' ')
+          [ -z "$ids" ] && exit 0
+          python -m hub.push_workout delete $ids
+          : > requests/garmin_delete
+          echo "done=1" >> "$GITHUB_OUTPUT"
+
       - name: Upload and schedule
         if: steps.files.outputs.files != ''
         env:
@@ -74,19 +87,24 @@ jobs:
           current: ${{ secrets.GARMIN_TOKENS }}
 
       - name: Commit push log
-        if: always() && (steps.files.outputs.files != '' || steps.files.outputs.deleted != '')
+        if: always() && (steps.files.outputs.files != '' || steps.files.outputs.deleted != '' || steps.del.outputs.done == '1')
         run: |
           git config user.name  "training-hub-bot"
           git config user.email "training-hub-bot@users.noreply.github.com"
-          git add logs/
+          git add logs/ requests/garmin_delete 2>/dev/null || git add logs/
           git diff --cached --quiet && exit 0
           git commit -m "hub: pushed ${{ steps.files.outputs.files }}"
-          git pull --rebase --autostash
-          git push
+          # main is busy (coach, bot, sync commit concurrently) — a lost log means duplicates in Garmin
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::push log not saved"
+          exit 1
 
       - name: Alert in Telegram on failure
         if: failure()
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: >-
-          python -m hub.telegram alert "Не удалось отправить тренировку в Garmin — ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" || true
+          python -m hub.telegram alert "Ошибка отправки в Garmin или лог logs/pushed.jsonl не сохранился (возможны дубли в календаре) — ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" || true

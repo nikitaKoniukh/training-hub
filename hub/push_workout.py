@@ -33,7 +33,7 @@ def main(paths: list[str]) -> int:
         print("nothing to push")
         return 0
     entries = _log_entries()
-    done = {e["sha"] for e in entries}
+    done = {e["sha"] for e in entries if "sha" in e}
 
     api = login()
     rc = 0
@@ -48,7 +48,7 @@ def main(paths: list[str]) -> int:
             spec = load_spec(path)
             workout = build(spec)
 
-            for prev in [e for e in entries if e["date"] == spec["date"]]:
+            for prev in [e for e in entries if e.get("date") == spec["date"] and e.get("workoutId") and not e.get("cancelled")]:
                 try:
                     if prev.get("scheduleId"):
                         api.unschedule_workout(prev["scheduleId"])
@@ -82,7 +82,7 @@ def main(paths: list[str]) -> int:
 
 def cancel(day: str, api=None) -> str:
     """Remove every workout pushed for `day` from the Garmin calendar."""
-    live = [e for e in _log_entries() if e["date"] == day and not e.get("cancelled")]
+    live = [e for e in _log_entries() if e.get("date") == day and not e.get("cancelled") and not e.get("deleted")]
     cancelled_ids = {e.get("workoutId") for e in _log_entries() if e.get("cancelled")}
     live = [e for e in live if e.get("workoutId") not in cancelled_ids]
     if not live:
@@ -112,7 +112,29 @@ def cancel(day: str, api=None) -> str:
     return f"Отменил на {day}: " + ", ".join(e.get("name", str(e["workoutId"])) for e in removed)
 
 
+def delete_ids(ids: list[str]) -> int:
+    """Delete workouts by Garmin workoutId (orphans that never made it into the log)."""
+    api = login()
+    rc = 0
+    try:
+        with LOG.open("a") as f:
+            for wid in ids:
+                try:
+                    api.delete_workout(int(wid))
+                    print(f"deleted workout {wid}")
+                    f.write(json.dumps({"workoutId": int(wid), "deleted": True,
+                                        "at": datetime.now(TZ).isoformat(timespec="seconds")}) + "\n")
+                except Exception as exc:
+                    print(f"warn: delete {wid}: {exc}")
+                    rc = 1
+    finally:
+        save_tokens(api)
+    return rc
+
+
 if __name__ == "__main__":
+    if len(sys.argv) >= 3 and sys.argv[1] == "delete":
+        sys.exit(delete_ids(sys.argv[2:]))
     if len(sys.argv) == 3 and sys.argv[1] == "cancel":
         print(cancel(sys.argv[2]))
         sys.exit(0)
