@@ -1,5 +1,46 @@
 [
  {
+  "activityId": 25196541942,
+  "startTimeLocal": "2026-11-25 18:00:22",
+  "duration": 913.02099609375,
+  "distance": 4565.68994140625,
+  "averageHR": 87.0,
+  "averageSpeed": 5.000999927520751,
+  "activityTrainingLoad": 3.2100830078125,
+  "aerobicTrainingEffect": 0.20000000298023224,
+  "anaerobicTrainingEffect": 0.0,
+  "elevationGain": 36.0,
+  "type": "cycling"
+ },
+ {
+  "activityId": 25191566421,
+  "startTimeLocal": "2026-11-25 08:08:29",
+  "duration": 763.4340209960938,
+  "distance": 4856.16015625,
+  "averageHR": 115.0,
+  "averageSpeed": 6.361000061035156,
+  "activityTrainingLoad": 28.39166259765625,
+  "aerobicTrainingEffect": 1.2999999523162842,
+  "anaerobicTrainingEffect": 0.699999988079071,
+  "elevationGain": 28.0,
+  "type": "cycling"
+ },
+ {
+  "activityId": 25191125063,
+  "startTimeLocal": "2026-11-25 05:53:23",
+  "duration": 2712.569091796875,
+  "distance": 7763.93017578125,
+  "averageHR": 119.0,
+  "averageSpeed": 2.861999988555908,
+  "activityTrainingLoad": 56.5672607421875,
+  "aerobicTrainingEffect": 2.5999999046325684,
+  "anaerobicTrainingEffect": 0.0,
+  "avgPower": 320.0,
+  "normPower": 333.0,
+  "elevationGain": 39.0,
+  "type": "running"
+ },
+ {
   "activityId": 25185459238,
   "startTimeLocal": "2026-11-24 17:57:55",
   "duration": 821.2769775390625,
