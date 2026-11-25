@@ -1,0 +1,684 @@
+{
+  "date": "2026-11-25",
+  "syncedAt": "2026-11-25T02:54:02+02:00",
+  "lactateThreshold": {
+    "speed_and_heart_rate": {
+      "userProfilePK": 95957400,
+      "version": 1795495015069,
+      "calendarDate": "2026-11-24T06:36:55.4",
+      "sequence": 1795495015069,
+      "speed": 0.41666549999999997,
+      "heartRate": 166,
+      "heartRateCycling": 157
+    },
+    "power": {
+      "userProfilePk": 95957400,
+      "calendarDate": "2026-11-24T06:36:45.0",
+      "origin": "power",
+      "sport": "RUNNING",
+      "functionalThresholdPower": 443,
+      "weight": 77.9,
+      "powerToWeight": 5.6867779204107824,
+      "ftpCreateTime": "2026-11-24T06:36:45.0",
+      "weightCreateTime": "2026-10-24T06:22:55.0",
+      "isStale": false
+    }
+  },
+  "racePredictions": {
+    "userId": 95957400,
+    "fromCalendarDate": null,
+    "toCalendarDate": null,
+    "calendarDate": "2026-11-25",
+    "time5K": 1072,
+    "time10K": 2264,
+    "timeHalfMarathon": 5063,
+    "timeMarathon": 11034
+  },
+  "maxMetrics": [],
+  "cyclingFtp": {
+    "userProfilePK": 95957400,
+    "version": 1794640142614,
+    "calendarDate": "2026-11-14T09:08:43.0",
+    "isStale": false,
+    "sequence": 1794640142614,
+    "sport": "CYCLING",
+    "functionalThresholdPower": 266,
+    "biometricSourceType": "CHANGE_LOG"
+  },
+  "enduranceScore": {
+    "userProfilePK": 95957400,
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-25",
+    "avg": 8175,
+    "max": 8302,
+    "groupMap": {
+      "2026-10-22": {
+        "groupAverage": 8298,
+        "groupMax": 8298,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 10.52
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 41.21
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 46.23
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 2.04
+          }
+        ]
+      },
+      "2026-10-29": {
+        "groupAverage": 8188,
+        "groupMax": 8302,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 9.655714
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 42.102856
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 46.359997
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 1.8814287
+          }
+        ]
+      },
+      "2026-11-05": {
+        "groupAverage": 8060,
+        "groupMax": 8103,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 7.7957144
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 48.148567
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 43.188572
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 0.8671428
+          }
+        ]
+      },
+      "2026-11-12": {
+        "groupAverage": 8146,
+        "groupMax": 8203,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 6.401428
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 49.76286
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 43.268574
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 0.56714284
+          }
+        ]
+      },
+      "2026-11-19": {
+        "groupAverage": 8187,
+        "groupMax": 8221,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 4.89
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 53.13666
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 41.256664
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 0.7166667
+          }
+        ]
+      }
+    },
+    "enduranceScoreDTO": {
+      "userProfilePK": 95957400,
+      "deviceId": 3508626943,
+      "calendarDate": "2026-11-24",
+      "overallScore": 8221,
+      "classification": 6,
+      "feedbackPhrase": 72,
+      "primaryTrainingDevice": true,
+      "gaugeLowerLimit": 3570,
+      "classificationLowerLimitIntermediate": 5100,
+      "classificationLowerLimitTrained": 5800,
+      "classificationLowerLimitWellTrained": 6600,
+      "classificationLowerLimitExpert": 7300,
+      "classificationLowerLimitSuperior": 8100,
+      "classificationLowerLimitElite": 8800,
+      "gaugeUpperLimit": 10560,
+      "contributors": [
+        {
+          "activityTypeId": null,
+          "group": 0,
+          "contribution": 55.47
+        },
+        {
+          "activityTypeId": null,
+          "group": 1,
+          "contribution": 39.45
+        },
+        {
+          "activityTypeId": null,
+          "group": 6,
+          "contribution": 4.4
+        },
+        {
+          "activityTypeId": null,
+          "group": 8,
+          "contribution": 0.68
+        }
+      ]
+    }
+  },
+  "runningTolerance": [
+    {
+      "userProfilePK": 95957400,
+      "calendarDate": "2026-10-31",
+      "totalImpactLoad": 42970,
+      "totalDistance": 36686.0,
+      "tolerance": 54086,
+      "startOfWeek": "2026-10-28",
+      "endOfWeek": "2026-10-31",
+      "weekIndex": 1921
+    },
+    {
+      "userProfilePK": 95957400,
+      "calendarDate": "2026-11-07",
+      "totalImpactLoad": 43550,
+      "totalDistance": 41095.0,
+      "tolerance": 53215,
+      "startOfWeek": "2026-11-01",
+      "endOfWeek": "2026-11-07",
+      "weekIndex": 1922
+    },
+    {
+      "userProfilePK": 95957400,
+      "calendarDate": "2026-11-14",
+      "totalImpactLoad": 58540,
+      "totalDistance": 52936.0,
+      "tolerance": 55585,
+      "startOfWeek": "2026-11-08",
+      "endOfWeek": "2026-11-14",
+      "weekIndex": 1923
+    },
+    {
+      "userProfilePK": 95957400,
+      "calendarDate": "2026-11-21",
+      "totalImpactLoad": 50110,
+      "totalDistance": 41272.0,
+      "tolerance": 59028,
+      "startOfWeek": "2026-11-15",
+      "endOfWeek": "2026-11-21",
+      "weekIndex": 1924
+    },
+    {
+      "userProfilePK": 95957400,
+      "calendarDate": "2026-11-25",
+      "totalImpactLoad": 25760,
+      "totalDistance": 20509.0,
+      "tolerance": 62872,
+      "startOfWeek": "2026-11-22",
+      "endOfWeek": "2026-11-25",
+      "weekIndex": 1925
+    }
+  ],
+  "runningEconomy": {},
+  "criticalSwimSpeed": {
+    "version": 1769832974692,
+    "criticalSwimSpeed": 667,
+    "measurementTimestampLocal": "2026-01-31T06:01:30.0",
+    "measurementTimestampGMT": "2026-01-31T04:01:30.0",
+    "biometricSourceType": "CHANGE_LOG"
+  },
+  "hillScore": {
+    "userProfilePK": 95957400,
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-25",
+    "periodAvgScore": {
+      "2026-10-28": 50
+    },
+    "maxScore": 53,
+    "hillScoreDTOList": [
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-24",
+        "strengthScore": 37,
+        "enduranceScore": 33,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 12,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-23",
+        "strengthScore": 37,
+        "enduranceScore": 33,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 11,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-22",
+        "strengthScore": 35,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 13,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-21",
+        "strengthScore": 35,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 12,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-20",
+        "strengthScore": 35,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 11,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-19",
+        "strengthScore": 35,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 13,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-18",
+        "strengthScore": 35,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 12,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-17",
+        "strengthScore": 38,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 11,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-16",
+        "strengthScore": 38,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 13,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-15",
+        "strengthScore": 38,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 12,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-14",
+        "strengthScore": 40,
+        "enduranceScore": 32,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 11,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-13",
+        "strengthScore": 39,
+        "enduranceScore": 31,
+        "hillScoreClassificationId": 3,
+        "overallScore": 52,
+        "hillScoreFeedbackPhraseId": 13,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-12",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 8,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-11",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 7,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-10",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 10,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-09",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 9,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-08",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 8,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-07",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 7,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-06",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 6,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-05",
+        "strengthScore": 39,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 50,
+        "hillScoreFeedbackPhraseId": 6,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-04",
+        "strengthScore": 36,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 42,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-03",
+        "strengthScore": 36,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 4,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-02",
+        "strengthScore": 37,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 44,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-01",
+        "strengthScore": 37,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 43,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-10-31",
+        "strengthScore": 37,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 42,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-10-30",
+        "strengthScore": 38,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 4,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-10-29",
+        "strengthScore": 38,
+        "enduranceScore": 25,
+        "hillScoreClassificationId": 2,
+        "overallScore": 49,
+        "hillScoreFeedbackPhraseId": 44,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-10-28",
+        "strengthScore": 41,
+        "enduranceScore": 27,
+        "hillScoreClassificationId": 3,
+        "overallScore": 51,
+        "hillScoreFeedbackPhraseId": 9,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      }
+    ]
+  },
+  "summary": {
+    "ltPace": "4:00",
+    "ltPaceSec": 240.0,
+    "ltHr": 166,
+    "ltHrCycling": 157,
+    "ltDate": "2026-11-24",
+    "predict_5k": "0:17:52",
+    "predict_10k": "0:37:44",
+    "predict_half": "1:24:23",
+    "predict_marathon": "3:03:54",
+    "ftpCycling": 266,
+    "ftpRunningPower": 443,
+    "weightKg": 77.9,
+    "cssPer100m": "2:29",
+    "cssDate": "2026-01-31",
+    "runTolerance": {
+      "week": "2026-11-22",
+      "impactLoad": 25760,
+      "tolerance": 62872,
+      "ratio": 0.41
+    },
+    "enduranceScore4wAvg": 8175
+  }
+}

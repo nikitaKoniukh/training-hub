@@ -1821,31 +1821,5 @@
   "aerobicTrainingEffect": 2.0,
   "anaerobicTrainingEffect": 0.30000001192092896,
   "type": "lap_swimming"
- },
- {
-  "activityId": 24197649118,
-  "startTimeLocal": "2026-09-01 17:43:40",
-  "duration": 593.218017578125,
-  "distance": 2670.89990234375,
-  "averageHR": 100.0,
-  "averageSpeed": 4.501999855041504,
-  "activityTrainingLoad": 4.3559112548828125,
-  "aerobicTrainingEffect": 0.30000001192092896,
-  "anaerobicTrainingEffect": 0.0,
-  "elevationGain": 18.0,
-  "type": "cycling"
- },
- {
-  "activityId": 24191789486,
-  "startTimeLocal": "2026-09-01 07:41:46",
-  "duration": 1025.1689453125,
-  "distance": 5676.240234375,
-  "averageHR": 107.0,
-  "averageSpeed": 5.5370001792907715,
-  "activityTrainingLoad": 7.0156097412109375,
-  "aerobicTrainingEffect": 0.5,
-  "anaerobicTrainingEffect": 0.0,
-  "elevationGain": 20.0,
-  "type": "cycling"
  }
 ]
