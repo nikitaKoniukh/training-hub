@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "syncedAt": "2026-11-25T02:54:02+02:00",
+  "syncedAt": "2026-11-25T05:11:14+02:00",
   "lactateThreshold": {
     "speed_and_heart_rate": {
       "userProfilePK": 95957400,
@@ -163,22 +163,22 @@
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 4.89
+            "contribution": 4.8342853
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 53.13666
+            "contribution": 53.359997
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 41.256664
+            "contribution": 41.092857
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 0.7166667
+            "contribution": 0.7128572
           }
         ]
       }
@@ -186,8 +186,8 @@
     "enduranceScoreDTO": {
       "userProfilePK": 95957400,
       "deviceId": 3508626943,
-      "calendarDate": "2026-11-24",
-      "overallScore": 8221,
+      "calendarDate": "2026-11-25",
+      "overallScore": 8184,
       "classification": 6,
       "feedbackPhrase": 72,
       "primaryTrainingDevice": true,
@@ -203,22 +203,22 @@
         {
           "activityTypeId": null,
           "group": 0,
-          "contribution": 55.47
+          "contribution": 54.7
         },
         {
           "activityTypeId": null,
           "group": 1,
-          "contribution": 39.45
+          "contribution": 40.11
         },
         {
           "activityTypeId": null,
           "group": 6,
-          "contribution": 4.4
+          "contribution": 4.5
         },
         {
           "activityTypeId": null,
           "group": 8,
-          "contribution": 0.68
+          "contribution": 0.69
         }
       ]
     }
@@ -292,6 +292,19 @@
     },
     "maxScore": 53,
     "hillScoreDTOList": [
+      {
+        "userProfilePK": 95957400,
+        "deviceId": 3508626943,
+        "calendarDate": "2026-11-25",
+        "strengthScore": 36,
+        "enduranceScore": 33,
+        "hillScoreClassificationId": 3,
+        "overallScore": 53,
+        "hillScoreFeedbackPhraseId": 13,
+        "vo2Max": null,
+        "vo2MaxPreciseValue": null,
+        "primaryTrainingDevice": true
+      },
       {
         "userProfilePK": 95957400,
         "deviceId": 3508626943,

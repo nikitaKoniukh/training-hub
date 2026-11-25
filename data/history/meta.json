@@ -1,7 +1,7 @@
 {
  "start": "2026-09-02",
  "end": "2026-11-25",
- "syncedAt": "2026-11-25T02:54:05+02:00",
+ "syncedAt": "2026-11-25T05:11:17+02:00",
  "errors": {
   "bodyBattery": "GarminConnectConnectionError: API call client error (400): API Error 400 - Invalid Dates, difference in days between StartDate and EndDate cannot be more than 28 days."
  }

@@ -1259,6 +1259,21 @@
    "status": "UNBALANCED",
    "feedbackPhrase": "HRV_UNBALANCED_10",
    "createTimeStamp": "2026-11-24T03:06:53.618"
+  },
+  {
+   "calendarDate": "2026-11-25",
+   "weeklyAvg": 38,
+   "lastNightAvg": 43,
+   "lastNight5MinHigh": 71,
+   "baseline": {
+    "lowUpper": 35,
+    "balancedLow": 37,
+    "balancedUpper": 49,
+    "markerValue": 0.2916565
+   },
+   "status": "BALANCED",
+   "feedbackPhrase": "HRV_BALANCED_1",
+   "createTimeStamp": "2026-11-25T03:02:20.150"
   }
  ],
  "userProfilePk": 95957400
