@@ -71,3 +71,11 @@ Cron в Actions идёт по UTC: летом (IDT) синк будет в 19:20
 По пятницам вечерний тренер присылает разбор недели и график (`hub/weekly.py`): км бега против плана,
 прогноз марафона, порог, HRV. История за 12 недель — `data/history/` (обновляется каждым синком),
 план по неделям — `plan/weeks.json`.
+
+## Watchdog
+
+`.github/workflows/watchdog.yml` + `hub/watchdog.py` — проверка, что тренер в Claude реально отработал.
+~05:35 и ~19:45 (Asia/Jerusalem) смотрит: есть отчёт за сегодня, сообщение ушло в Telegram (`outbox/sent/`),
+текущие версии тренировок (вечером — все с завтра, утром — сегодняшняя) есть в `logs/pushed.jsonl`,
+в `outbox/` ничего не застряло. Если нет — alert в Telegram. Ручной запуск: Actions → Watchdog → Run
+(`mode`, `dry_run`); локально: `python -m hub.watchdog evening --dry-run`.
