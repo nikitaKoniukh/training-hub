@@ -2,3 +2,7 @@
 {"date": "2026-11-25", "file": "workouts/2026-11-25.json", "sha": "8f873a5b37ca7893", "workoutId": 1773029820, "scheduleId": 1852024913, "name": "E 45' пульс ≤145", "pushedAt": "2026-11-24T20:59:44+02:00"}
 {"date": "2026-11-26", "file": "workouts/2026-11-26.json", "sha": "1c117ba2041715a9", "workoutId": 1773842196, "scheduleId": 1852830472, "name": "Плавание аэроб 2200 м", "pushedAt": "2026-11-25T21:33:30+02:00"}
 {"date": "2026-12-02", "file": "workouts/2026-12-02.json", "sha": "88164f61cee3c4df", "workoutId": 1773842200, "scheduleId": 1852830474, "name": "E 50' пульс ≤145", "pushedAt": "2026-11-25T21:33:30+02:00"}
+{"date": "2026-11-27", "file": "workouts/2026-11-27.json", "sha": "385110940b04b071", "workoutId": 1773844744, "scheduleId": 1852833015, "name": "Лонг 2:00 · 21' MP 4:15", "pushedAt": "2026-11-25T21:37:11+02:00"}
+{"date": "2026-11-28", "file": "workouts/2026-11-28.json", "sha": "7a35145b1a509c97", "workoutId": 1773844746, "scheduleId": 1852833017, "name": "Вело Z2 3:00 · 160–200W", "pushedAt": "2026-11-25T21:37:11+02:00"}
+{"date": "2026-11-29", "file": "workouts/2026-11-29.json", "sha": "9387bcd1cafcda30", "workoutId": 1773844750, "scheduleId": 1852833021, "name": "E 35' пульс ≤145", "pushedAt": "2026-11-25T21:37:11+02:00"}
+{"date": "2026-12-01", "file": "workouts/2026-12-01.json", "sha": "96608760e3468370", "workoutId": 1773844752, "scheduleId": 1852833024, "name": "Порог 3×12' @4:00 · 67'", "pushedAt": "2026-11-25T21:37:12+02:00"}
