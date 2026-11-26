@@ -1,35 +1,70 @@
 {
   "date": "2026-11-26",
-  "syncedAt": "2026-11-26T05:12:43+02:00",
+  "syncedAt": "2026-11-26T18:46:54+02:00",
   "sleep": {
-    "sleepSeconds": null,
-    "deep": null,
-    "light": null,
-    "rem": null,
-    "awake": null,
-    "start": null,
-    "end": null,
-    "score": null,
-    "avgOvernightHrv": null,
-    "restingHeartRate": null,
-    "bodyBatteryChange": null,
-    "avgSleepStress": null
+    "sleepSeconds": 28860,
+    "deep": 4680,
+    "light": 13080,
+    "rem": 11100,
+    "awake": 60,
+    "start": 1795646575000,
+    "end": 1795675495000,
+    "score": 89,
+    "avgOvernightHrv": 38.0,
+    "restingHeartRate": 42,
+    "bodyBatteryChange": 62,
+    "avgSleepStress": 15.0
   },
-  "hrv": null,
-  "readiness": null,
+  "hrv": {
+    "lastNightAvg": 38,
+    "lastNight5MinHigh": 61,
+    "weeklyAvg": 38,
+    "status": "BALANCED",
+    "feedbackPhrase": "HRV_BALANCED_2",
+    "baseline": {
+      "lowUpper": 35,
+      "balancedLow": 37,
+      "balancedUpper": 49,
+      "markerValue": 0.2916565
+    }
+  },
+  "readiness": {
+    "score": 77,
+    "level": "HIGH",
+    "feedbackShort": "WELL_RECOVERED",
+    "sleepScore": 89,
+    "recoveryTime": 0,
+    "acuteLoad": 700,
+    "hrvWeeklyAverage": 38,
+    "hrvFactorPercent": 74,
+    "sleepHistoryFactorPercent": 85,
+    "stressHistoryFactorPercent": 100,
+    "acwrFactorPercent": 91
+  },
   "stats": {
-    "restingHeartRate": 43,
-    "averageStressLevel": 14,
-    "maxStressLevel": 21,
-    "bodyBatteryHighestValue": 68,
+    "totalSteps": 8001,
+    "restingHeartRate": 42,
+    "averageStressLevel": 22,
+    "maxStressLevel": 90,
+    "bodyBatteryHighestValue": 95,
     "bodyBatteryLowestValue": 42,
-    "bodyBatteryMostRecentValue": 68,
+    "bodyBatteryMostRecentValue": 46,
     "moderateIntensityMinutes": 0,
     "vigorousIntensityMinutes": 0,
-    "activeKilocalories": 0.0
+    "activeKilocalories": 253.0
   },
   "trainingStatus": {
-    "vo2max": null
+    "vo2max": 59.2,
+    "status": "PRODUCTIVE_3",
+    "acuteLoad": 700,
+    "chronicLoad": 701,
+    "acwr": 0.9,
+    "loadBalance": {
+      "monthlyLoadAerobicLow": 1376.833,
+      "monthlyLoadAerobicHigh": 938.7144,
+      "monthlyLoadAnaerobic": 198.0503,
+      "trainingBalanceFeedbackPhrase": "ON_TARGET"
+    }
   },
   "activities": []
 }
