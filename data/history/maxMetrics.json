@@ -1322,11 +1322,11 @@
    "previousHeatAcclimationPercentage": 11,
    "heatTrend": "DEACCLIMATIZING",
    "altitudeTrend": null,
-   "currentAltitude": 0,
+   "currentAltitude": 67,
    "previousAltitude": 0,
    "acclimationPercentage": 0,
    "previousAcclimationPercentage": 0,
-   "altitudeAcclimationLocalTimestamp": "2026-11-25T18:16:55.0"
+   "altitudeAcclimationLocalTimestamp": "2026-11-25T23:54:35.0"
   }
  }
 ]

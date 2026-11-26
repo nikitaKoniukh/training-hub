@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "syncedAt": "2026-11-25T21:32:01+02:00",
+  "syncedAt": "2026-11-26T02:31:48+02:00",
   "sleep": {
     "sleepSeconds": 24579,
     "deep": 6240,
@@ -42,13 +42,13 @@
     "acwrFactorPercent": 82
   },
   "stats": {
-    "totalSteps": 18273,
+    "totalSteps": 18398,
     "restingHeartRate": 42,
-    "averageStressLevel": 19,
+    "averageStressLevel": 18,
     "maxStressLevel": 98,
     "bodyBatteryHighestValue": 92,
-    "bodyBatteryLowestValue": 35,
-    "bodyBatteryMostRecentValue": 35,
+    "bodyBatteryLowestValue": 33,
+    "bodyBatteryMostRecentValue": 41,
     "moderateIntensityMinutes": 13,
     "vigorousIntensityMinutes": 58,
     "activeKilocalories": 977.0
