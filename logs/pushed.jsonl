@@ -12,3 +12,4 @@
 {"workoutId": 1773033229, "deleted": true, "at": "2026-11-25T22:15:55+02:00"}
 {"workoutId": 1773033232, "deleted": true, "at": "2026-11-25T22:15:55+02:00"}
 {"date": "2026-11-26", "file": "workouts/2026-11-26.json", "sha": "a7b829e11a8ac184", "workoutId": 1774066772, "scheduleId": 1853053870, "name": "Плавание легко 1600 м", "pushedAt": "2026-11-26T05:12:31+02:00"}
+{"date": "2026-12-03", "file": "workouts/2026-12-03.json", "sha": "ac1ce660124b39a8", "workoutId": 1774482840, "scheduleId": 1853464111, "name": "E 41' + 6 ускорений", "pushedAt": "2026-11-26T18:48:11+02:00"}
