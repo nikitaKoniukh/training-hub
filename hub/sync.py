@@ -221,6 +221,15 @@ def summarize_performance(p: dict) -> dict:
     mm = p.get("maxMetrics")
     mm = mm[0] if isinstance(mm, list) and mm else (mm or {})
     s["vo2max"] = ((mm.get("generic") or {}).get("vo2MaxPreciseValue"))
+    if not s["vo2max"]:  # no new VO2 today -> last known value from 12-week history
+        try:
+            hist = json.loads(Path("data/history/maxMetrics.json").read_text())
+            vals = [(r.get("generic") or {}) for r in hist if (r.get("generic") or {}).get("vo2MaxPreciseValue")]
+            if vals:
+                s["vo2max"] = vals[-1]["vo2MaxPreciseValue"]
+                s["vo2maxDate"] = vals[-1].get("calendarDate")
+        except Exception:
+            pass
     ftp = p.get("cyclingFtp")
     ftp = ftp[-1] if isinstance(ftp, list) and ftp else (ftp or {})
     s["ftpCycling"] = ftp.get("functionalThresholdPower")
