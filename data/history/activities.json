@@ -1850,17 +1850,5 @@
   "normPower": 348.0,
   "elevationGain": 37.0,
   "type": "running"
- },
- {
-  "activityId": 24223522575,
-  "startTimeLocal": "2026-09-03 16:43:27",
-  "duration": 1647.2740478515625,
-  "distance": 1100.0,
-  "averageHR": 121.0,
-  "averageSpeed": 0.6679999828338623,
-  "activityTrainingLoad": 34.33250427246094,
-  "aerobicTrainingEffect": 2.0,
-  "anaerobicTrainingEffect": 0.30000001192092896,
-  "type": "lap_swimming"
  }
 ]

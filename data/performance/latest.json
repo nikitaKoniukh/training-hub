@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-26",
-  "syncedAt": "2026-11-26T18:46:55+02:00",
+  "date": "2026-11-27",
+  "syncedAt": "2026-11-27T02:41:01+02:00",
   "lactateThreshold": {
     "speed_and_heart_rate": {
       "userProfilePK": 95957400,
@@ -28,11 +28,11 @@
     "userId": 95957400,
     "fromCalendarDate": null,
     "toCalendarDate": null,
-    "calendarDate": "2026-11-26",
+    "calendarDate": "2026-11-27",
     "time5K": 1072,
     "time10K": 2267,
     "timeHalfMarathon": 5070,
-    "timeMarathon": 11051
+    "timeMarathon": 11052
   },
   "maxMetrics": [],
   "cyclingFtp": {
@@ -47,138 +47,138 @@
   },
   "enduranceScore": {
     "userProfilePK": 95957400,
-    "startDate": "2026-10-29",
-    "endDate": "2026-11-26",
-    "avg": 8173,
-    "max": 8302,
+    "startDate": "2026-10-30",
+    "endDate": "2026-11-27",
+    "avg": 8159,
+    "max": 8235,
     "groupMap": {
-      "2026-10-23": {
-        "groupAverage": 8302,
-        "groupMax": 8302,
-        "enduranceContributorDTOList": [
-          {
-            "activityTypeId": null,
-            "group": 6,
-            "contribution": 9.6
-          },
-          {
-            "activityTypeId": null,
-            "group": 0,
-            "contribution": 41.28
-          },
-          {
-            "activityTypeId": null,
-            "group": 1,
-            "contribution": 47.13
-          },
-          {
-            "activityTypeId": null,
-            "group": 8,
-            "contribution": 1.99
-          }
-        ]
-      },
-      "2026-10-30": {
-        "groupAverage": 8157,
+      "2026-10-24": {
+        "groupAverage": 8235,
         "groupMax": 8235,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 9.441428
+            "contribution": 9.85
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 42.81286
+            "contribution": 42.05
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 45.912853
+            "contribution": 46.05
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 1.8328571
+            "contribution": 2.05
           }
         ]
       },
-      "2026-11-06": {
-        "groupAverage": 8068,
+      "2026-10-31": {
+        "groupAverage": 8134,
+        "groupMax": 8187,
+        "enduranceContributorDTOList": [
+          {
+            "activityTypeId": null,
+            "group": 6,
+            "contribution": 9.191428
+          },
+          {
+            "activityTypeId": null,
+            "group": 0,
+            "contribution": 43.412853
+          },
+          {
+            "activityTypeId": null,
+            "group": 1,
+            "contribution": 45.62
+          },
+          {
+            "activityTypeId": null,
+            "group": 8,
+            "contribution": 1.775714
+          }
+        ]
+      },
+      "2026-11-07": {
+        "groupAverage": 8079,
         "groupMax": 8142,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 7.6128573
+            "contribution": 7.41
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 48.66857
+            "contribution": 49.332855
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 43.012856
+            "contribution": 42.715717
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 0.7057143
+            "contribution": 0.54142857
           }
         ]
       },
-      "2026-11-13": {
-        "groupAverage": 8154,
+      "2026-11-14": {
+        "groupAverage": 8160,
         "groupMax": 8203,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 6.1299996
+            "contribution": 5.8885717
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 49.95571
+            "contribution": 50.202858
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 43.311428
+            "contribution": 43.26286
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 0.6028572
+            "contribution": 0.6457143
           }
         ]
       },
-      "2026-11-20": {
+      "2026-11-21": {
         "groupAverage": 8187,
         "groupMax": 8221,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 4.661429
+            "contribution": 4.606667
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 54.031433
+            "contribution": 54.264996
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 40.605713
+            "contribution": 40.443333
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 0.70142853
+            "contribution": 0.685
           }
         ]
       }
@@ -230,7 +230,7 @@
       "totalImpactLoad": 42970,
       "totalDistance": 36686.0,
       "tolerance": 54086,
-      "startOfWeek": "2026-10-29",
+      "startOfWeek": "2026-10-30",
       "endOfWeek": "2026-10-31",
       "weekIndex": 1921
     },
@@ -266,12 +266,12 @@
     },
     {
       "userProfilePK": 95957400,
-      "calendarDate": "2026-11-26",
+      "calendarDate": "2026-11-27",
       "totalImpactLoad": 34090,
       "totalDistance": 28272.0,
       "tolerance": 62872,
       "startOfWeek": "2026-11-22",
-      "endOfWeek": "2026-11-26",
+      "endOfWeek": "2026-11-27",
       "weekIndex": 1925
     }
   ],
@@ -285,10 +285,10 @@
   },
   "hillScore": {
     "userProfilePK": 95957400,
-    "startDate": "2026-10-29",
-    "endDate": "2026-11-26",
+    "startDate": "2026-10-30",
+    "endDate": "2026-11-27",
     "periodAvgScore": {
-      "2026-10-29": 51
+      "2026-10-30": 51
     },
     "maxScore": 53,
     "hillScoreDTOList": [
@@ -655,19 +655,6 @@
         "vo2Max": null,
         "vo2MaxPreciseValue": null,
         "primaryTrainingDevice": true
-      },
-      {
-        "userProfilePK": 95957400,
-        "deviceId": 3508626943,
-        "calendarDate": "2026-10-29",
-        "strengthScore": 38,
-        "enduranceScore": 25,
-        "hillScoreClassificationId": 2,
-        "overallScore": 49,
-        "hillScoreFeedbackPhraseId": 44,
-        "vo2Max": null,
-        "vo2MaxPreciseValue": null,
-        "primaryTrainingDevice": true
       }
     ]
   },
@@ -680,7 +667,7 @@
     "predict_5k": "0:17:52",
     "predict_10k": "0:37:47",
     "predict_half": "1:24:30",
-    "predict_marathon": "3:04:11",
+    "predict_marathon": "3:04:12",
     "ftpCycling": 266,
     "ftpRunningPower": 443,
     "weightKg": 77.9,
@@ -692,6 +679,6 @@
       "tolerance": 62872,
       "ratio": 0.54
     },
-    "enduranceScore4wAvg": 8173
+    "enduranceScore4wAvg": 8159
   }
 }

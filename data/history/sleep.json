@@ -1,35 +1,5 @@
 [
  {
-  "calendarDate": "2026-09-03",
-  "values": {
-   "remTime": 4380,
-   "restingHeartRate": 46,
-   "respiration": 18.27,
-   "localSleepEndTimeInMillis": 1788417750000,
-   "awakeTime": 60,
-   "spO2": null,
-   "localSleepStartTimeInMillis": 1788395550000,
-   "sleepAlignmentOswStart": -260,
-   "sleepAlignmentStatus": "NOT_ALIGNED",
-   "hrvStatus": "UNBALANCED",
-   "sleepAlignmentOswEnd": 210,
-   "sleepScore": 58,
-   "lightTime": 12960,
-   "avgOvernightHrv": 33.0,
-   "totalSleepTimeInSeconds": 22140,
-   "deepTime": 4800,
-   "sleepScoreQuality": "POOR",
-   "sleepNeed": 470,
-   "bodyBatteryChange": 27,
-   "gmtSleepStartTimeInMillis": 1788384750000,
-   "gmtSleepEndTimeInMillis": 1788406950000,
-   "skinTempF": -1.3,
-   "skinTempC": -0.7,
-   "avgHeartRate": 59.0,
-   "hrv7dAverage": 37.0
-  }
- },
- {
   "calendarDate": "2026-09-04",
   "values": {
    "remTime": 7020,
