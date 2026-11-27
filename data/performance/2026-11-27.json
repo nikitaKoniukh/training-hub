@@ -1,26 +1,26 @@
 {
   "date": "2026-11-27",
-  "syncedAt": "2026-11-27T05:11:44+02:00",
+  "syncedAt": "2026-11-27T18:46:50+02:00",
   "lactateThreshold": {
     "speed_and_heart_rate": {
       "userProfilePK": 95957400,
-      "version": 1795495015069,
-      "calendarDate": "2026-11-24T06:36:55.4",
-      "sequence": 1795495015069,
-      "speed": 0.41666549999999997,
+      "version": 1795758209509,
+      "calendarDate": "2026-11-27T07:43:29.482",
+      "sequence": 1795758209509,
+      "speed": 0.41944327000000003,
       "heartRate": 166,
       "heartRateCycling": 157
     },
     "power": {
       "userProfilePk": 95957400,
-      "calendarDate": "2026-11-24T06:36:45.0",
+      "calendarDate": "2026-11-27T07:43:09.0",
       "origin": "power",
       "sport": "RUNNING",
-      "functionalThresholdPower": 443,
-      "weight": 77.9,
-      "powerToWeight": 5.6867779204107824,
-      "ftpCreateTime": "2026-11-24T06:36:45.0",
-      "weightCreateTime": "2026-10-24T06:22:55.0",
+      "functionalThresholdPower": 451,
+      "weight": 78.5,
+      "powerToWeight": 5.745222929936306,
+      "ftpCreateTime": "2026-11-27T07:43:09.0",
+      "weightCreateTime": "2026-11-27T05:17:32.0",
       "isStale": false
     }
   },
@@ -29,12 +29,45 @@
     "fromCalendarDate": null,
     "toCalendarDate": null,
     "calendarDate": "2026-11-27",
-    "time5K": 1072,
-    "time10K": 2267,
-    "timeHalfMarathon": 5070,
-    "timeMarathon": 11052
+    "time5K": 1063,
+    "time10K": 2250,
+    "timeHalfMarathon": 5020,
+    "timeMarathon": 10942
   },
-  "maxMetrics": [],
+  "maxMetrics": [
+    {
+      "userId": 95957400,
+      "generic": {
+        "calendarDate": "2026-11-27",
+        "vo2MaxPreciseValue": 59.4,
+        "vo2MaxValue": 59.0,
+        "fitnessAge": null,
+        "fitnessAgeDescription": null,
+        "maxMetCategory": 0,
+        "sport": "RUNNING",
+        "subSport": "GENERIC"
+      },
+      "cycling": null,
+      "heatAltitudeAcclimation": {
+        "calendarDate": "2026-11-27",
+        "altitudeAcclimationDate": "2026-11-27",
+        "previousAltitudeAcclimationDate": "2026-11-27",
+        "heatAcclimationDate": "2026-11-27",
+        "previousHeatAcclimationDate": "2026-11-25",
+        "altitudeAcclimation": 0,
+        "previousAltitudeAcclimation": 0,
+        "heatAcclimationPercentage": 8,
+        "previousHeatAcclimationPercentage": 9,
+        "heatTrend": "DEACCLIMATIZING",
+        "altitudeTrend": null,
+        "currentAltitude": 0,
+        "previousAltitude": 0,
+        "acclimationPercentage": 0,
+        "previousAcclimationPercentage": 0,
+        "altitudeAcclimationLocalTimestamp": "2026-11-27T07:42:58.0"
+      }
+    }
+  ],
   "cyclingFtp": {
     "userProfilePK": 95957400,
     "version": 1794640142614,
@@ -49,8 +82,8 @@
     "userProfilePK": 95957400,
     "startDate": "2026-10-30",
     "endDate": "2026-11-27",
-    "avg": 8158,
-    "max": 8235,
+    "avg": 8160,
+    "max": 8243,
     "groupMap": {
       "2026-10-24": {
         "groupAverage": 8235,
@@ -157,28 +190,28 @@
         ]
       },
       "2026-11-21": {
-        "groupAverage": 8183,
-        "groupMax": 8221,
+        "groupAverage": 8195,
+        "groupMax": 8243,
         "enduranceContributorDTOList": [
           {
             "activityTypeId": null,
             "group": 6,
-            "contribution": 4.4957147
+            "contribution": 4.4771433
           },
           {
             "activityTypeId": null,
             "group": 0,
-            "contribution": 54.362854
+            "contribution": 54.581425
           },
           {
             "activityTypeId": null,
             "group": 1,
-            "contribution": 40.452858
+            "contribution": 40.25714
           },
           {
             "activityTypeId": null,
             "group": 8,
-            "contribution": 0.68857145
+            "contribution": 0.6842857
           }
         ]
       }
@@ -187,9 +220,9 @@
       "userProfilePK": 95957400,
       "deviceId": 3508626943,
       "calendarDate": "2026-11-27",
-      "overallScore": 8163,
+      "overallScore": 8243,
       "classification": 6,
-      "feedbackPhrase": 72,
+      "feedbackPhrase": 73,
       "primaryTrainingDevice": true,
       "gaugeLowerLimit": 3570,
       "classificationLowerLimitIntermediate": 5100,
@@ -203,22 +236,22 @@
         {
           "activityTypeId": null,
           "group": 0,
-          "contribution": 54.95
+          "contribution": 56.48
         },
         {
           "activityTypeId": null,
           "group": 1,
-          "contribution": 40.51
+          "contribution": 39.14
         },
         {
           "activityTypeId": null,
           "group": 6,
-          "contribution": 3.83
+          "contribution": 3.7
         },
         {
           "activityTypeId": null,
           "group": 8,
-          "contribution": 0.71
+          "contribution": 0.68
         }
       ]
     }
@@ -267,8 +300,8 @@
     {
       "userProfilePK": 95957400,
       "calendarDate": "2026-11-27",
-      "totalImpactLoad": 34090,
-      "totalDistance": 28272.0,
+      "totalImpactLoad": 67450,
+      "totalDistance": 54307.0,
       "tolerance": 62872,
       "startOfWeek": "2026-11-22",
       "endOfWeek": "2026-11-27",
@@ -672,26 +705,27 @@
     ]
   },
   "summary": {
-    "ltPace": "4:00",
-    "ltPaceSec": 240.0,
+    "ltPace": "3:58",
+    "ltPaceSec": 238.4,
     "ltHr": 166,
     "ltHrCycling": 157,
-    "ltDate": "2026-11-24",
-    "predict_5k": "0:17:52",
-    "predict_10k": "0:37:47",
-    "predict_half": "1:24:30",
-    "predict_marathon": "3:04:12",
+    "ltDate": "2026-11-27",
+    "predict_5k": "0:17:43",
+    "predict_10k": "0:37:30",
+    "predict_half": "1:23:40",
+    "predict_marathon": "3:02:22",
+    "vo2max": 59.4,
     "ftpCycling": 266,
-    "ftpRunningPower": 443,
-    "weightKg": 77.9,
+    "ftpRunningPower": 451,
+    "weightKg": 78.5,
     "cssPer100m": "2:29",
     "cssDate": "2026-01-31",
     "runTolerance": {
       "week": "2026-11-22",
-      "impactLoad": 34090,
+      "impactLoad": 67450,
       "tolerance": 62872,
-      "ratio": 0.54
+      "ratio": 1.07
     },
-    "enduranceScore4wAvg": 8158
+    "enduranceScore4wAvg": 8160
   }
 }

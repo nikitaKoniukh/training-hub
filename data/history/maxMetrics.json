@@ -1328,5 +1328,37 @@
    "previousAcclimationPercentage": 0,
    "altitudeAcclimationLocalTimestamp": "2026-11-25T23:54:35.0"
   }
+ },
+ {
+  "userId": 95957400,
+  "generic": {
+   "calendarDate": "2026-11-27",
+   "vo2MaxPreciseValue": 59.4,
+   "vo2MaxValue": 59.0,
+   "fitnessAge": null,
+   "fitnessAgeDescription": null,
+   "maxMetCategory": 0,
+   "sport": "RUNNING",
+   "subSport": "GENERIC"
+  },
+  "cycling": null,
+  "heatAltitudeAcclimation": {
+   "calendarDate": "2026-11-27",
+   "altitudeAcclimationDate": "2026-11-27",
+   "previousAltitudeAcclimationDate": "2026-11-27",
+   "heatAcclimationDate": "2026-11-27",
+   "previousHeatAcclimationDate": "2026-11-25",
+   "altitudeAcclimation": 0,
+   "previousAltitudeAcclimation": 0,
+   "heatAcclimationPercentage": 8,
+   "previousHeatAcclimationPercentage": 9,
+   "heatTrend": "DEACCLIMATIZING",
+   "altitudeTrend": null,
+   "currentAltitude": 0,
+   "previousAltitude": 0,
+   "acclimationPercentage": 0,
+   "previousAcclimationPercentage": 0,
+   "altitudeAcclimationLocalTimestamp": "2026-11-27T07:42:58.0"
+  }
  }
 ]

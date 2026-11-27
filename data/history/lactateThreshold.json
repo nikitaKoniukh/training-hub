@@ -90,6 +90,13 @@
    "series": "running",
    "value": 0.41666549999999997,
    "updatedDate": "2026-11-24"
+  },
+  {
+   "from": "2026-11-27",
+   "until": "2026-11-27",
+   "series": "running",
+   "value": 0.41944327000000003,
+   "updatedDate": "2026-11-27"
   }
  ],
  "heart_rate": [
@@ -183,6 +190,13 @@
    "series": "running",
    "value": 166.0,
    "updatedDate": "2026-11-24"
+  },
+  {
+   "from": "2026-11-27",
+   "until": "2026-11-27",
+   "series": "running",
+   "value": 166.0,
+   "updatedDate": "2026-11-27"
   }
  ],
  "power": [
@@ -290,6 +304,13 @@
    "series": "running",
    "value": 443.0,
    "updatedDate": "2026-11-24"
+  },
+  {
+   "from": "2026-11-27",
+   "until": "2026-11-27",
+   "series": "running",
+   "value": 451.0,
+   "updatedDate": "2026-11-27"
   }
  ]
 }

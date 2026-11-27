@@ -1,5 +1,20 @@
 [
  {
+  "activityId": 25212216757,
+  "startTimeLocal": "2026-11-27 05:42:05",
+  "duration": 7217.46923828125,
+  "distance": 26035.5390625,
+  "averageHR": 143.0,
+  "averageSpeed": 3.6070001125335693,
+  "activityTrainingLoad": 246.1752166748047,
+  "aerobicTrainingEffect": 4.699999809265137,
+  "anaerobicTrainingEffect": 0.0,
+  "avgPower": 402.0,
+  "normPower": 409.0,
+  "elevationGain": 90.0,
+  "type": "running"
+ },
+ {
   "activityId": 25196541942,
   "startTimeLocal": "2026-11-25 18:00:22",
   "duration": 913.02099609375,
