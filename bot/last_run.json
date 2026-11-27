@@ -2,11 +2,11 @@
   "cmd": "send",
   "bot": "nikita_coach_hub_bot",
   "webhook": null,
-  "pending": 1,
+  "pending": 0,
   "chat_id": 766393315,
-  "at": "2026-11-27T00:57:18+02:00",
+  "at": "2026-11-27T02:17:35+02:00",
   "ok": true,
-  "lastPollUpdates": 1,
+  "lastPollUpdates": 0,
   "offset": 415091730,
   "error": null
 }
