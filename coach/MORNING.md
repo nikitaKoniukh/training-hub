@@ -11,6 +11,7 @@ GitHub: только git и `gh api` (REST). `gh workflow/run/pr` не рабо�
 1. `git pull`. Сегодня = дата по Asia/Jerusalem.
 2. Запроси синк: `date -Iseconds > requests/sync && git add requests/sync && git commit -m "morning: request sync" && git push`.
    Каждые 30 с `git pull`, пока в `data/daily/<сегодня>.json` не обновится `syncedAt`.
+   Синк запрашивай всегда, даже если файл выглядит свежим.
    Новая ночь пришла, если `sleep.end` — сегодняшнее утро и есть `hrv.lastNightAvg`.
    Если синк прошёл, а ночи ещё нет (часы не синхронизировались с телефоном) — повтори запрос синка один раз
    через 3 минуты. Дедлайн — 05:20: дальше не ждать.
