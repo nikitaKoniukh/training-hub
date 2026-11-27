@@ -1,25 +1,69 @@
 {
   "date": "2026-11-27",
-  "syncedAt": "2026-11-27T02:41:00+02:00",
+  "syncedAt": "2026-11-27T05:11:44+02:00",
   "sleep": {
-    "sleepSeconds": null,
-    "deep": null,
-    "light": null,
-    "rem": null,
-    "awake": null,
-    "start": null,
-    "end": null,
-    "score": null,
-    "avgOvernightHrv": null,
-    "restingHeartRate": null,
-    "bodyBatteryChange": null,
-    "avgSleepStress": null
+    "sleepSeconds": 25783,
+    "deep": 5760,
+    "light": 10500,
+    "rem": 9540,
+    "awake": 0,
+    "start": 1795729885000,
+    "end": 1795755668000,
+    "score": 81,
+    "avgOvernightHrv": 32.0,
+    "restingHeartRate": 45,
+    "bodyBatteryChange": 46,
+    "avgSleepStress": 25.0
   },
-  "hrv": null,
-  "readiness": null,
-  "stats": {},
+  "hrv": {
+    "lastNightAvg": 32,
+    "lastNight5MinHigh": 64,
+    "weeklyAvg": 37,
+    "status": "UNBALANCED",
+    "feedbackPhrase": "HRV_UNBALANCED_12",
+    "baseline": {
+      "lowUpper": 35,
+      "balancedLow": 38,
+      "balancedUpper": 49,
+      "markerValue": 0.21240234
+    }
+  },
+  "readiness": {
+    "score": 75,
+    "level": "HIGH",
+    "feedbackShort": "LISTEN_TO_YOUR_BODY",
+    "sleepScore": 81,
+    "recoveryTime": 0,
+    "acuteLoad": 562,
+    "hrvWeeklyAverage": 37,
+    "hrvFactorPercent": 60,
+    "sleepHistoryFactorPercent": 86,
+    "stressHistoryFactorPercent": 98,
+    "acwrFactorPercent": 98
+  },
+  "stats": {
+    "restingHeartRate": 45,
+    "averageStressLevel": 19,
+    "maxStressLevel": 29,
+    "bodyBatteryHighestValue": 77,
+    "bodyBatteryLowestValue": 44,
+    "bodyBatteryMostRecentValue": 77,
+    "moderateIntensityMinutes": 0,
+    "vigorousIntensityMinutes": 0,
+    "activeKilocalories": 0.0
+  },
   "trainingStatus": {
-    "vo2max": null
+    "vo2max": 59.2,
+    "status": "PRODUCTIVE_5",
+    "acuteLoad": 562,
+    "chronicLoad": 681,
+    "acwr": 0.8,
+    "loadBalance": {
+      "monthlyLoadAerobicLow": 1323.4001,
+      "monthlyLoadAerobicHigh": 938.7144,
+      "monthlyLoadAnaerobic": 198.0503,
+      "trainingBalanceFeedbackPhrase": "ON_TARGET"
+    }
   },
   "activities": []
 }

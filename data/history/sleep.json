@@ -2518,5 +2518,35 @@
    "avgHeartRate": 45.0,
    "hrv7dAverage": 38.0
   }
+ },
+ {
+  "calendarDate": "2026-11-27",
+  "values": {
+   "remTime": 9540,
+   "restingHeartRate": 45,
+   "respiration": 16.33,
+   "localSleepEndTimeInMillis": 1795755668000,
+   "awakeTime": 0,
+   "spO2": null,
+   "localSleepStartTimeInMillis": 1795729885000,
+   "sleepAlignmentOswStart": -230,
+   "sleepAlignmentStatus": "BEHIND",
+   "hrvStatus": "UNBALANCED",
+   "sleepAlignmentOswEnd": 240,
+   "sleepScore": 81,
+   "lightTime": 10500,
+   "avgOvernightHrv": 32.0,
+   "totalSleepTimeInSeconds": 25783,
+   "deepTime": 5760,
+   "sleepScoreQuality": "GOOD",
+   "sleepNeed": 470,
+   "bodyBatteryChange": 46,
+   "gmtSleepStartTimeInMillis": 1795722685000,
+   "gmtSleepEndTimeInMillis": 1795748468000,
+   "skinTempF": -0.3,
+   "skinTempC": -0.1,
+   "avgHeartRate": 49.0,
+   "hrv7dAverage": 37.0
+  }
  }
 ]
