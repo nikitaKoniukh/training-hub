@@ -2,38 +2,6 @@
  {
   "userId": 95957400,
   "generic": {
-   "calendarDate": "2026-09-04",
-   "vo2MaxPreciseValue": 58.4,
-   "vo2MaxValue": 58.0,
-   "fitnessAge": null,
-   "fitnessAgeDescription": null,
-   "maxMetCategory": 0,
-   "sport": "RUNNING",
-   "subSport": "GENERIC"
-  },
-  "cycling": null,
-  "heatAltitudeAcclimation": {
-   "calendarDate": "2026-09-04",
-   "altitudeAcclimationDate": "2026-09-04",
-   "previousAltitudeAcclimationDate": "2026-09-04",
-   "heatAcclimationDate": "2026-09-04",
-   "previousHeatAcclimationDate": "2026-09-03",
-   "altitudeAcclimation": 0,
-   "previousAltitudeAcclimation": 0,
-   "heatAcclimationPercentage": 100,
-   "previousHeatAcclimationPercentage": 100,
-   "heatTrend": "ACCLIMATIZED",
-   "altitudeTrend": null,
-   "currentAltitude": 68,
-   "previousAltitude": 0,
-   "acclimationPercentage": 0,
-   "previousAcclimationPercentage": 0,
-   "altitudeAcclimationLocalTimestamp": "2026-09-04T23:58:12.0"
-  }
- },
- {
-  "userId": 95957400,
-  "generic": {
    "calendarDate": "2026-09-07",
    "vo2MaxPreciseValue": 59.0,
    "vo2MaxValue": 59.0,
@@ -1354,11 +1322,11 @@
    "previousHeatAcclimationPercentage": 9,
    "heatTrend": "DEACCLIMATIZING",
    "altitudeTrend": null,
-   "currentAltitude": 0,
+   "currentAltitude": 87,
    "previousAltitude": 0,
    "acclimationPercentage": 0,
    "previousAcclimationPercentage": 0,
-   "altitudeAcclimationLocalTimestamp": "2026-11-27T07:42:58.0"
+   "altitudeAcclimationLocalTimestamp": "2026-11-27T23:57:54.0"
   }
  }
 ]

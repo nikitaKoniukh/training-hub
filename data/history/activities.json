@@ -1850,20 +1850,5 @@
   "anaerobicTrainingEffect": 0.0,
   "elevationGain": 20.0,
   "type": "cycling"
- },
- {
-  "activityId": 24230379241,
-  "startTimeLocal": "2026-09-04 05:47:32",
-  "duration": 3242.012939453125,
-  "distance": 10032.509765625,
-  "averageHR": 131.0,
-  "averageSpeed": 3.0950000286102295,
-  "activityTrainingLoad": 83.10357666015625,
-  "aerobicTrainingEffect": 2.9000000953674316,
-  "anaerobicTrainingEffect": 0.0,
-  "avgPower": 346.0,
-  "normPower": 348.0,
-  "elevationGain": 37.0,
-  "type": "running"
  }
 ]
