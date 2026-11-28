@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "syncedAt": "2026-11-28T02:06:50+02:00",
+  "syncedAt": "2026-11-28T05:11:07+02:00",
   "sleep": {
     "sleepSeconds": null,
     "deep": null,
@@ -17,7 +17,17 @@
   },
   "hrv": null,
   "readiness": null,
-  "stats": {},
+  "stats": {
+    "restingHeartRate": 47,
+    "averageStressLevel": 19,
+    "maxStressLevel": 29,
+    "bodyBatteryHighestValue": 34,
+    "bodyBatteryLowestValue": 11,
+    "bodyBatteryMostRecentValue": 34,
+    "moderateIntensityMinutes": 0,
+    "vigorousIntensityMinutes": 0,
+    "activeKilocalories": 0.0
+  },
   "trainingStatus": {
     "vo2max": null
   },
